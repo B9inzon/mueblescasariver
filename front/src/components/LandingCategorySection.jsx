@@ -17,14 +17,15 @@ export const LandingCategorySection = ({ name, text, image, index }) => {
             alt={`Imagen de ${name}`}
             fill
             className="object-contain"
+            style={{ filter: 'drop-shadow(20px 20px 20px #282624)' }}
             priority
           />
         </div>
       </div>
 
       <div className=" relative w-full  lg:w-1/2 ">
-        <div className={`bg-[#c9c2b7] p-10  shadow-2xl h-[500px] flex flex-col justify-center ${isEven ? "rounded-l-4xl" : "rounded-r-4xl"} `}>
-          <h2 className={` text-[#3c3a36] font-bold text-4xl mb-8 ${isEven ? "" : "text-end" } `}>{name}</h2>
+        <div className={`bg-[#c9c2b7] p-10  l h-[500px] flex flex-col justify-center ${isEven ? "rounded-l-4xl" : "rounded-r-4xl"} `}>
+          <h2 className=" text-[#3c3a36] font-bold text-5xl mb-6 text-center">{name}</h2>
           <p className={` font-secondary text-2xl ${isEven ? "" : "text-end" }`}> {text} </p>
         </div>
       </div>
