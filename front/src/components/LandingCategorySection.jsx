@@ -24,9 +24,9 @@ export const LandingCategorySection = ({ name, text, image, index }) => {
       </div>
 
       <div className=" relative w-full  lg:w-1/2 ">
-        <div className={`bg-[#c9c2b7] p-10  l h-[500px] flex flex-col justify-center ${isEven ? "rounded-l-4xl" : "rounded-r-4xl"} `}>
+        <div className={`bg-[#c9c2b7] p-10  l h-[500px] flex flex-col justify-center ${isEven ? "rounded-l-xl" : "rounded-r-xl"} `}>
           <h2 className=" text-[#3c3a36] font-bold text-5xl mb-6 text-center">{name}</h2>
-          <p className={` font-secondary text-2xl ${isEven ? "" : "text-end" }`}> {text} </p>
+          <p className=" font-secondary text-2xl text-center" > {text} </p>
         </div>
       </div>
     </div>  
