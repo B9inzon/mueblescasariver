@@ -6,7 +6,7 @@ import BurguerMenu from "./BurguerMenu";
 
 export const Navigation = () => {
   return (
-    <div className="flex flex-row h-36 pt-8 items-center justify-around fixed top-0 left-0 right-0 z-50 bg-opacity-50 backdrop-blur-md text-[#3C3A36]">
+    <div className="flex flex-row max-w-screen h-20 lg:h-32 p-12 md:py-14 lg:py-8 items-center justify-between fixed top-0 left-0 right-0 z-50 bg-opacity-50  backdrop-blur-md text-[#3C3A36] ">
       <Link href="/">
         <Logo />
       </Link>
