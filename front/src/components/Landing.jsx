@@ -43,18 +43,19 @@ export const Landing = () => {
         </h1>
         <h3 className="text-center text-2xl lg:text-3xl mb-16 lg:mb-20  ">
           Seguro que lo tenemos y si no, te lo fabricamos. <br />
-          <span className="font-bold ">Echa un vistazo.</span>
+          <span className="font-bold ">Revisa nuestras categorías.</span>
         </h3>
-
-        {landingCategories.map((category, index) => (
-          <LandingCategorySection
-            key={index}
-            name={category.name}
-            text={category.text}
-            image={category.image}
-            index={index}
-          />
-        ))}
+        <div className="flex flex-col md:flex-row md:flex-wrap w-full items-center justify-center gap-6 ">
+          {landingCategories.map((category, index) => (
+            <LandingCategorySection
+              key={index}
+              name={category.name}
+              text={category.text}
+              image={category.image}
+              index={index}
+            />
+          ))}
+        </div>
       </section>
       <ContactBanner className=" " />
       <section className="flex justify-center mb-10  h-screen lg:h-[50vh] bg-[#eae6d2]">
@@ -74,7 +75,11 @@ export const Landing = () => {
             Fabricamos muebles bajo previa cotización, lo que significa que las
             imágenes aquí presentadas son de referencia. Puedes contactarnos
             para consultar el color, los materiales y los detalles adicionales
-            que desees en tu mueble. <span className="font-semibold"><a href="/TyC">Vease terminos y condiciones</a></span>.
+            que desees en tu mueble.{" "}
+            <span className="font-semibold">
+              <a href="/TyC">Vease terminos y condiciones</a>
+            </span>
+            .
           </p>
           <ul className="flex flex-col text-center lg:flex-row font-principal font-semibold  gap-14 text-xl">
             <li>HABITACIÓN</li>

@@ -18,4 +18,10 @@ export const landingCategories = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         image: "/assets/Sofa-frente.png"
     },
+    {
+        name: "Decoración",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "/assets/deco.png"
+    },
+    
 ]

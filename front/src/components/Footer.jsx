@@ -20,7 +20,7 @@ export const Footer = () => {
             <ul className='mb-10'>
                 <h3 className=' font-semibold  text-xl lg:text-2xl'>Información</h3>
                 <li><a href="">Términos y Condiciones</a></li>
-                <li><a href="">Superintendencia de Industria y Comercio</a></li>
+                <li><a href="https://sedeelectronica.sic.gov.co/" target='_blank'>Superintendencia de Industria y Comercio</a></li>
             </ul>
         </div>
     </div>
