@@ -28,7 +28,7 @@ export const Navigation = () => {
   }, [lastScrollY]);
 
   return (
-    <div className={`flex flex-row w-full h-20 lg:h-32 px-6 py-4 md:py-6 lg:py-8 items-center justify-between fixed top-0 left-0 right-0 z-50 bg-black  bg-opacity-20 backdrop-blur-md text-[#3C3A36] transition duration-700 ${showNavbar ? "translate-y-0 " : "-translate-y-full opacity-0" } `}>
+    <div className={`flex flex-row w-full h-20 lg:h-32 px-6 py-4 md:py-6 lg:py-8 items-center justify-between fixed top-0 left-0 right-0 z-50 bg-[#463c2d]/30 backdrop-blur-lg text-[#3C3A36] transition duration-700 ${showNavbar ? "translate-y-0 " : "-translate-y-full " } `}>
       <Link href="/">
         <Logo />
       </Link>
