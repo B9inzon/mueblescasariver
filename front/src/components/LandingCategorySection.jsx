@@ -14,6 +14,7 @@ export const LandingCategorySection = ({ name, text, image, index }) => {
           src={image || "/placeholder.svg"}
           alt={`Imagen de ${name}`}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-contain"
           style={{ filter: "drop-shadow(20px 20px 20px #282624)" }}
           priority

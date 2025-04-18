@@ -1,23 +1,29 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { MenuIcon } from "./icons/MenuIcon"
-import { CloseIcon } from "./icons/CloseIcon"
+import { MenuIcon } from "./icons/MenuIcon";
+import { CloseIcon } from "./icons/CloseIcon";
 
-const BurguerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
+const BurguerMenu = ({ isOpen, onToggle }) => {
   const switchMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    onToggle(!isOpen);
+  };
 
   return (
-    <div className="relative">
-      <button onClick={switchMenu} className="lg:hidden flex items-center justify-center" aria-label="Toggle menu">
+    <div className="relative ">
+      <button
+        onClick={switchMenu}
+        className="lg:hidden flex items-center justify-center"
+        aria-label="Toggle menu"
+      >
         <MenuIcon size={32} color="#3c3a36" strokeWidth={2} />
       </button>
 
-      {isOpen && <div className="fixed inset-0 bg-[#19120c] opacity-80 lg:hidden z-50" onClick={switchMenu}></div>}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-[#19120c] opacity-90 lg:hidden z-50 h-screen"
+          onClick={switchMenu}
+        ></div>
+      )}
 
       <div
         className={`fixed top-0 right-0 min-h-screen w-2/3 md:w-1/2 bg-gradient-to-b from-[#b4aea4] via-[#a09b92] to-[#78746d] shadow-lg transform ${
@@ -31,7 +37,7 @@ const BurguerMenu = () => {
         </div>
         <ul className="flex h-full flex-col font-medium items-center space-y-6 text-xl mt-10 text-[#3C3A36] transition">
           <li>
-            <a href="#" onClick={switchMenu}>
+            <a href="/" onClick={switchMenu}>
               Inicio
             </a>
           </li>
@@ -58,7 +64,7 @@ const BurguerMenu = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BurguerMenu
+export default BurguerMenu;

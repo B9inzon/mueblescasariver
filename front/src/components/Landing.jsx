@@ -27,6 +27,7 @@ export const Landing = () => {
             style={{ filter: "drop-shadow(20px 10px 10px #282624)" }}
             src="/assets/sillasinfondo.png"
             alt="Imagen de un mueble"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </section>
