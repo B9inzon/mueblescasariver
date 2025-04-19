@@ -10,7 +10,7 @@ export const CloseIcon = ({ width = 24, height = 24, color = "#3c3a36" }) => {
         viewBox="0 0 24 24"
         fill={color}
         stroke={color}
-        strokeWidth="2"
+        strokeWidth="0"
         className="w-9 h-9"
       >
         <path fill="none" d="M0 0h24v24H0z"></path>

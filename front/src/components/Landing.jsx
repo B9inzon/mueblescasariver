@@ -7,18 +7,18 @@ import { LandingAbout } from "./LandingAbout";
 export const Landing = () => {
   return (
     <>
-      <section className="flex flex-col  md:gap-0 lg:gap-0 xl:gap-0 w-full text-[#3c3a36] min-h-screen bg-[#c9c2b7] ">
-        <div className="flex flex-col h-[90vh] gap-10 md:gap-0 lg:gap-0 xl:gap-0 lg:h-[80vh] xl:h-[85vh] lg:flex-row w-full ">
-          <div className="flex items-center justify-center w-full pt-20 pb-10 lg:w-1/2 lg:py-0 lg:h-full ">
-            <h1 className="font-principal w-full max-w-2xl px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
+      <section className="flex flex-col gap-10 md:gap-0 lg:gap-0 xl:gap-0 w-full text-[#3c3a36] min-h-screen bg-[#c9c2b7] ">
+        <div className="flex flex-col h-[30%] gap-0 md:gap-0 lg:gap-0 xl:gap-0 lg:h-[80vh] xl:h-[85vh] lg:flex-row w-full  ">
+          <div className="flex items-center justify-center w-full pt-[8vh] pb-10 lg:w-1/2 lg:py-0 lg:h-full ">
+            <h1 className="font-principal w-full max-w-2xl px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-2xl md:text-5xl lg:text-6xl  ">
               Diseño y calidad{" "}
-              <span className="block mt-2 text-5xl md:text-6xl lg:text-8xl font-bold">
+              <span className="block mt-2 text-3xl md:text-6xl lg:text-8xl font-bold">
                 en un solo lugar
               </span>
             </h1>
           </div>
 
-          <div className="relative flex w-full h-[300px] md:h-[400px] lg:h-full lg:w-1/2 items-center justify-center lg:justify-start">
+          <div className="relative flex w-full h-[40%] md:h-[400px] lg:h-full lg:w-1/2 items-center justify-center lg:justify-start ">
             <div className="absolute z-10 lg:left-30 xl:left-40 ">
               <div className="h-[260px] w-[260px] md:h-[260px] md:w-[260px] lg:h-[300px] lg:w-[300px] xl:h-[370px] xl:w-[370px] rounded-full bg-[#d3cec5]"></div>
             </div>
@@ -37,10 +37,10 @@ export const Landing = () => {
             href="/products"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center justify-center bg-[#c6ad2e]	 p-1 md:p-3 w-[250px] md:w-[300px] lg:w-[350px]  rounded-4xl gap-4  hover:scale-105 transition-all duration-600 ease-in-out "
+            className=" flex items-center justify-center bg-[#c6ad2e]	 p-1 md:p-3 w-[250px] md:w-[300px] lg:w-[350px]  rounded-4xl gap-4  hover:scale-105 transition-all duration-600 ease-in-out "
             style={{ filter: "drop-shadow(10px 10px 6px #282624)" }}
           >
-            <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-3xl group-hover:scale-110 transition-all duration-900 ease-in-out ">
+            <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-3xl  transition-all duration-900 ease-in-out ">
               Catálogo
             </h3>
           </a>
@@ -74,7 +74,7 @@ export const Landing = () => {
         </div>
       </section>
       <ContactBanner className=" " />
-      <section className="flex justify-center mb-10 w-full h-screen lg:h-[50vh] bg-[#eae6d2]">
+      <section className="flex justify-center mb-10 w-full h-auto lg:h-[50vh] bg-[#eae6d2]">
         <div className="flex h-full text-[#3c3a36] w-full lg:w-[80%] p-1 flex-col items-center justify-center ">
           <h1 className="font-bold text-3xl lg:text-4xl mb-3 text-center ">
             Muebles Casa River catálogo online

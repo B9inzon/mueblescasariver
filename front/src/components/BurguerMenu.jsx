@@ -20,19 +20,19 @@ const BurguerMenu = ({ isOpen, onToggle }) => {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-[#19120c] opacity-90 lg:hidden z-50 h-screen"
+          className="fixed inset-0 bg-[#141312] opacity-90 lg:hidden z-50 h-screen"
           onClick={switchMenu}
         ></div>
       )}
 
       <div
-        className={`fixed top-0 right-0 min-h-screen w-2/3 md:w-1/2 bg-gradient-to-b from-[#b4aea4] via-[#a09b92] to-[#78746d] shadow-lg transform ${
+        className={`fixed top-0 right-0 min-h-screen w-2/3 md:w-1/2 bg-gradient-to-b from-[#eae6d2] via-[#a09b92] to-[#78746d] shadow-lg transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out lg:hidden z-60`}
       >
         <div className="flex justify-end p-4">
           <button onClick={switchMenu} aria-label="Close menu">
-            <CloseIcon size={32} color="#ffffff" strokeWidth={2} />
+            <CloseIcon size={32} color="#3c3a36" />
           </button>
         </div>
         <ul className="flex h-full flex-col font-medium items-center space-y-6 text-xl mt-10 text-[#3C3A36] transition">
@@ -42,23 +42,18 @@ const BurguerMenu = ({ isOpen, onToggle }) => {
             </a>
           </li>
           <li>
-            <a href="Salas" onClick={switchMenu}>
-              Salas
+            <a href="/products" onClick={switchMenu}>
+              Catálogo
             </a>
           </li>
           <li>
-            <a href="Salas" onClick={switchMenu}>
-              Sillas
+            <a href="/contact" onClick={switchMenu}>
+              Contacto
             </a>
           </li>
           <li>
-            <a href="Salas" onClick={switchMenu}>
-              Comedores
-            </a>
-          </li>
-          <li>
-            <a href="#Contact" onClick={switchMenu}>
-              Contáctanos
+            <a href="/about" onClick={switchMenu}>
+              Acerca de nosotros
             </a>
           </li>
         </ul>

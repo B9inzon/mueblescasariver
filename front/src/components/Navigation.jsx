@@ -39,7 +39,7 @@ export const Navigation = () => {
 
   return (
     <div
-      className={`flex flex-row w-full h-20 lg:h-32 px-6 py-4 md:py-6 lg:py-8 items-center justify-between fixed top-0 left-0 right-0 z-50 bg-[#463c2d]/30 backdrop-blur-lg text-[#3C3A36] transition duration-700 ${
+      className={`flex flex-row w-full h-20 lg:h-32 px-14 py-4 md:py-6 lg:py-8 items-center justify-between fixed top-0 left-0 right-0 z-50 bg-[#eae6d2]/40 backdrop-blur-lg text-[#3C3A36] transition duration-700 ${
         showNavbar ? "translate-y-0 " : "-translate-y-full "
       } `}
     >
@@ -47,7 +47,7 @@ export const Navigation = () => {
         <Logo />
       </Link>
       <nav className="">
-        <ul className="hidden lg:flex flex-row gap-10 text-lg font-medium">
+        <ul className="hidden lg:flex flex-row gap-10 text-lg font-semibold">
           <li>
             <a href="/">Inicio</a>
           </li>
