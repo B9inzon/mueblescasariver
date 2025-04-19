@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #f2f1e9;
+  font-size: 100%;
 }
 
 @theme inline {
@@ -35,7 +36,8 @@ body {
   font-family: var(--font-secondary);
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -44,7 +46,7 @@ a {
   color: inherit;
 }
 
-a:hover{
+a:hover {
   cursor: pointer;
 }
 
@@ -62,6 +64,8 @@ a:hover{
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }

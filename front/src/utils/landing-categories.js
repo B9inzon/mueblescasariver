@@ -4,24 +4,24 @@ export const landingCategories = [
     {
         name: "Salas",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "/assets/salagrande.png"
+        image: "/assets/Living-Room.jpg"
     },
 
     {
         name: "Sillas",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "/assets/silla.png"
+        image: "/assets/poltrona.jpg"
     },
 
     {
         name: "Sofás",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "/assets/Sofa-frente.png"
+        image: "/assets/sofa.jpg"
     },
     {
         name: "Decoración",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "/assets/deco.png"
+        image: "/assets/decoraciones.jpg"
     },
     
 ]

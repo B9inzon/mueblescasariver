@@ -18,7 +18,7 @@ export const Navigation = () => {
 
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 200) {
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setShowNavbar(false);
       } else {
         setShowNavbar(true);
