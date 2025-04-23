@@ -35,7 +35,6 @@ export const Landing = () => {
         <div className="  flex w-full h-full items-start justify-center ">
           <a
             href="/products"
-            target="_blank"
             rel="noopener noreferrer"
             className=" flex items-center justify-center bg-[#c6ad2e]	 p-1 md:p-3 w-[250px] md:w-[300px] lg:w-[350px]  rounded-4xl gap-4  hover:scale-105 transition-all duration-600 ease-in-out "
             style={{ filter: "drop-shadow(10px 10px 6px #282624)" }}
