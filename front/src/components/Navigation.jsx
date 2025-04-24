@@ -39,7 +39,7 @@ export const Navigation = () => {
 
   return (
     <div
-      className={`flex flex-row w-full h-20 lg:h-32 px-14 py-4 md:py-6 lg:py-8 items-center justify-between fixed top-0 left-0 right-0 z-50 bg-[#eae6d2]/40 backdrop-blur-lg text-[#3C3A36] transition duration-700 ${
+      className={`flex flex-row w-full h-20 lg:h-32 px-14 py-4 md:py-6 lg:py-8 items-center justify-between fixed top-0 left-0 right-0 z-50 bg-[#3c3a36]/80 backdrop-blur-lg text-[#eeece9] transition duration-700 ${
         showNavbar ? "translate-y-0 " : "-translate-y-full "
       } `}
     >

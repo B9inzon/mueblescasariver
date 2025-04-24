@@ -3,6 +3,8 @@ import { landingCategories } from "@/utils/landing-categories";
 import { LandingCategorySection } from "./LandingCategorySection";
 import ContactBanner from "./ContactBanner";
 import { LandingAbout } from "./LandingAbout";
+import MostSelling from "./MostSelling";
+import { mostSelling } from "@/utils/mostSelling";
 
 export const Landing = () => {
   return (
@@ -73,7 +75,21 @@ export const Landing = () => {
         </div>
       </section>
       <ContactBanner className=" " />
-      <section className="flex justify-center mb-10 w-full h-auto lg:h-[50vh] bg-[#eae6d2]">
+      <h1 className="flex font-secondary items-center justify-center text-center font-semibold w-full h-[20vh] text-[10vw] md:text-[7vw] lg:text-[3vw] text-[#3c3a36] ">
+              Lo más vendido
+            </h1>
+            <div className="flex flex-col md:flex-row md:flex-wrap w-full items-center justify-center gap-6 ">
+              {mostSelling.map((category, index) => (
+                <MostSelling
+                  key={index}
+                  name={category.name}
+                  text={category.text}
+                  image={category.images}
+                  index={index}
+                />
+              ))}
+            </div>
+      <section className="flex justify-center mb-10 w-full h-auto lg:h-[50vh] bg-[#3c3a36]/20">
         <div className="flex h-full text-[#3c3a36] w-full lg:w-[80%] p-1 flex-col items-center justify-center ">
           <h1 className="font-bold text-3xl lg:text-4xl mb-3 text-center ">
             Muebles Casa River catálogo online

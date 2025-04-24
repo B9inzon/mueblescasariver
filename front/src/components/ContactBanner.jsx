@@ -3,7 +3,7 @@ import { WhatsappIcon } from "./icons/WhatsappIcon";
 
 export default function ContactBanner() {
   return (
-    <div className="flex w-full h-[350px] lg:h-[500px] justify-center items-center ">
+    <div className="flex w-full h-[350px] lg:h-[400px] my-20 justify-center items-center bg-[#3c3a36]/20 ">
       <div className="flex flex-col w-full   h-[30vh] p-4 lg:h-60 justify-center items-center ">
         <h1 className="text-[#3c3a36] font-secondary font-bold text-xl md:text-2xl lg:text-3xl mb-10">
           Cotiza tu próximo mueble favotiro
