@@ -16,7 +16,7 @@ export default function ProductsList() {
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-1 md:gap-4 xl:gap-2 ">
         {products.map((product) => {
           return (
-            <Link key={product.id} href={`/products/id${product.id}`}>
+            <Link key={product.id} href={`/products/${product.id}`}>
               <ProductCard {...product} />
             </Link>
           );
