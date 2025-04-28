@@ -22,7 +22,7 @@ export default function ProductDetail({ images, name, price, description }) {
           <p className="text-sm lg:text-xl">{description}</p>
           <>AQUI VAN LOS BADGES DE CARACTERÍSTICAS</>
           <h3 className="text-xl lg:text-2xl font-bold">Precio: ${price}</h3>
-          <div className=" flex w-full  justify-center ">
+          <div className=" flex w-full ">
             <a
               href="https://wa.link/icnysi"
               target="_blank"
