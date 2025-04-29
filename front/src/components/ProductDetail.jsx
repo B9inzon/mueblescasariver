@@ -1,7 +1,16 @@
 import React from "react";
 import { WhatsappIcon } from "./icons/WhatsappIcon";
+import discountedPrice from "@/utils/discountedPrices";
 
-export default function ProductDetail({ images, name, price, description }) {
+export default function ProductDetail({
+  images,
+  name,
+  price,
+  discount,
+  description,
+}) {
+  const finalPrice = discountedPrice(price, discount);
+  const percentageOff = discount * 100;
   return (
     <div className="flex flex-col items-center pt-24 lg:pt-38 min-h-screen ">
       <div className="flex flex-col w-full lg:h-[80vh] lg:w-full  lg:flex-row md:px-10 lg:px-14 xl:px-30 gap-5 lg:gap-20  ">
@@ -21,7 +30,16 @@ export default function ProductDetail({ images, name, price, description }) {
           <h2 className="text-2xl lg:text-5xl font-semibold">{name}</h2>
           <p className="text-sm lg:text-xl">{description}</p>
           <>AQUI VAN LOS BADGES DE CARACTERÍSTICAS</>
-          <h3 className="text-xl lg:text-2xl font-bold">Precio: ${price}</h3>
+          <h3 className=" font-bold">
+            <span className="line-through text-[#3c3a36]/50 mr-5">
+              {" "}
+              ${price}
+            </span>
+            <span className="text-xl lg:text-3xl mr-2">${finalPrice}</span>
+          <span className="   h-14 w-14 text-green-500 text-2xl font-bold   ">
+            ({percentageOff}%)
+          </span>
+          </h3>
           <div className=" flex w-full ">
             <a
               href="https://wa.link/icnysi"

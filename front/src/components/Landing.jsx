@@ -5,11 +5,12 @@ import ContactBanner from "./ContactBanner";
 import { LandingAbout } from "./LandingAbout";
 import MostSelling from "./MostSelling";
 import { mostSelling } from "@/utils/mostSelling";
+import Link from "next/link";
 
 export const Landing = () => {
   return (
     <>
-      <section className="flex flex-col gap-10 md:gap-0 lg:gap-0 xl:gap-0 w-full text-[#3c3a36] min-h-screen bg-[#c9c2b7] ">
+      <section className="flex flex-col gap-10 md:gap-0 lg:gap-0 xl:gap-0 w-full text-[#3c3a36] min-h-screen  ">
         <div className="flex flex-col h-[30%] gap-0 md:gap-0 lg:gap-0 xl:gap-0 lg:h-[80vh] xl:h-[85vh] lg:flex-row w-full  ">
           <div className="flex items-center justify-center w-full pt-[8vh] pb-10 lg:w-1/2 lg:py-0 lg:h-full ">
             <h1 className="font-principal w-full max-w-2xl px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-2xl md:text-5xl lg:text-6xl  ">
@@ -22,7 +23,7 @@ export const Landing = () => {
 
           <div className="relative flex w-full h-[40%] md:h-[400px] lg:h-full lg:w-1/2 items-center justify-center lg:justify-start ">
             <div className="absolute z-10 lg:left-30 xl:left-40 ">
-              <div className="h-[260px] w-[260px] md:h-[260px] md:w-[260px] lg:h-[300px] lg:w-[300px] xl:h-[370px] xl:w-[370px] rounded-full bg-[#d3cec5]"></div>
+              <div className="h-[260px] w-[260px] md:h-[260px] md:w-[260px] lg:h-[300px] lg:w-[300px] xl:h-[370px] xl:w-[370px] rounded-full bg-[#f2f1e9]"></div>
             </div>
 
             <img
@@ -76,21 +77,24 @@ export const Landing = () => {
       </section>
       <ContactBanner className=" " />
       <h1 className="flex font-secondary items-center justify-center text-center font-semibold w-full h-[20vh] text-[10vw] md:text-[7vw] lg:text-[3vw] text-[#3c3a36] ">
-              Lo más vendido
-            </h1>
-            <div className="flex flex-col md:flex-row md:flex-wrap w-full items-center justify-center gap-6 ">
-              {mostSelling.map((category, index) => (
-                <MostSelling
-                  key={index}
-                  name={category.name}
-                  text={category.text}
-                  image={category.images}
-                  index={index}
-                />
-              ))}
-            </div>
-      <section className="flex justify-center mb-10 w-full h-auto lg:h-[50vh] bg-[#3c3a36]/20">
-        <div className="flex h-full text-[#3c3a36] w-full lg:w-[80%] p-1 flex-col items-center justify-center ">
+        Lo más vendido
+      </h1>
+      <div className="grid grid-cols-2  lg:grid-cols-4  w-full items-center px-2 md:px-14 xl:px-30 py-5 justify-center gap-4 ">
+        {mostSelling.map((product, id) => (
+          <Link key={product.id} href={`/products/${product.id}`}>
+            <MostSelling
+              key={id}
+              name={product.name}
+              text={product.text}
+              image={product.images}
+              price={product.price}
+              discount={product.discount}
+            />
+          </Link>
+        ))}
+      </div>
+      <section className="flex justify-center my-10 w-full h-auto lg:h-[50vh] bg-[#3c3a36]/20">
+        <div className="flex h-full text-[#3c3a36] w-full lg:w-[80%] p-5 flex-col items-center justify-center ">
           <h1 className="font-bold text-3xl lg:text-4xl mb-3 text-center ">
             Muebles Casa River catálogo online
           </h1>

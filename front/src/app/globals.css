@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #f2f1e9;
+  --foreground: #fcfcfa;
   font-size: 100%;
 }
 
@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #f2f1e9;
+    --background: ##fcfcfa;
     --foreground: #ededed;
   }
 }

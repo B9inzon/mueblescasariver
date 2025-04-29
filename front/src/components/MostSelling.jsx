@@ -1,16 +1,28 @@
-import React from 'react'
+import React from "react";
+import discountedPrice from "@/utils/discountedPrices";
 
-export default function MostSelling({ name, image }) {
+export default function MostSelling({ name, image, price, discount }) {
+  const finalPrice = discountedPrice(price, discount);
+  const percentageOff = discount * 100;
   return (
-    <div className=" w-full h-[40vh] md:w-[40%] lg:w-[30%] xl:w-[20%] flex flex-col justify-center overflow-hidden items-center md:rounded-xl mb-20 ">
-      <div
-        className="group flex w-full h-full  md:rounded-md items-center lg:items-end  justify-center lg:pb-20 scale-125 grayscale-50  lg:grayscale-100 hover:grayscale-25 bg-cover bg-center hover:scale-105 transition-all duration-600 ease-in-out "
-        style={{ backgroundImage: `url(${image})`}}
+    <div className=" relative flex w-full h-[50vh] md:w-full lg:w-full xl:w-full flex-col overflow-hidden justify-center  items-center rounded ">
+        <div className="flex absolute items-center justify-center top-2 left-2 h-14 w-14 text-xl bg-green-500 font-bold z-20 rounded-full text-white ">{percentageOff}%</div>
+      <div className="h-[70%] w-full overflow-hidden rounded">
+        <div
+          className=" flex w-full h-full   items-center lg:items-end  justify-center lg:pb-20 scale-125   lg:grayscale-50 hover:grayscale-0 bg-cover bg-center hover:scale-105 transition-all duration-600 ease-in-out "
+          style={{ backgroundImage: `url(${image})` }}
         >
-        <h2 className="bg-[#eeece9]  lg:bg-[#eeece9]/50 lg:group-hover:bg-[#eeece9]/70 text-[#3c3a36] p-2 rounded-md font-bold text-lg lg:text-[1.5vw] xl:text-lg  text-center group-hover:scale-[130%] transition-all duration-600 ease-in-out">
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-center h-[30%] gap-2">
+        <h3 className="text-center font-semibold  xl:text-lg text-[#3c3a36]  ">
           {name}
-        </h2>
+        </h3>
+        <h4>
+          <span className="line-through text-[#3c3a36]/50 mr-2">${price}</span>
+          <span className="text-green-500 font-bold">${finalPrice}</span>
+        </h4>
       </div>
     </div>
-  )
+  );
 }
