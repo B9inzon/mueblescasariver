@@ -10,7 +10,7 @@ import Link from "next/link";
 export const Landing = () => {
   return (
     <>
-      <section className="flex flex-col gap-10 md:gap-0 lg:gap-0 xl:gap-0 w-full text-[#3c3a36] min-h-screen  ">
+      <section className="flex flex-col gap-10 md:gap-0 lg:gap-0 xl:gap-0 w-full text-[#3c3a36] min-h-screen px-30 ">
         <div className="flex flex-col h-[30%] gap-0 md:gap-0 lg:gap-0 xl:gap-0 lg:h-[80vh] xl:h-[85vh] lg:flex-row w-full  ">
           <div className="flex items-center justify-center w-full pt-[8vh] pb-10 lg:w-1/2 lg:py-0 lg:h-full ">
             <h1 className="font-principal w-full max-w-2xl px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-2xl md:text-5xl lg:text-6xl  ">
@@ -63,7 +63,7 @@ export const Landing = () => {
           Seguro que lo tenemos y si no, te lo fabricamos. <br />
           <span className="font-bold ">Revisa nuestras categorías.</span>
         </h3>
-        <div className="flex flex-col md:flex-row md:flex-wrap w-full items-center justify-center gap-6 ">
+        <div className="grid grid-cols-2 lg:grid-cols-4 md:flex-wrap px-4 sm:px-10 md:px-14 xl:px-[15vw] w-full items-center justify-center gap-6 ">
           {landingCategories.map((category, index) => (
             <LandingCategorySection
               key={index}
@@ -79,7 +79,7 @@ export const Landing = () => {
       <h1 className="flex font-secondary items-center justify-center text-center font-semibold w-full h-[20vh] text-[10vw] md:text-[7vw] lg:text-[3vw] text-[#3c3a36] ">
         Lo más vendido
       </h1>
-      <div className="grid grid-cols-2  lg:grid-cols-4  w-full items-center px-2 md:px-14 xl:px-30 py-5 justify-center gap-4 ">
+      <div className="grid grid-cols-2  lg:grid-cols-4  w-full items-center px-2 md:px-14 xl:px-[15vw] py-5 justify-center gap-4 ">
         {mostSelling.map((product, id) => (
           <Link key={product.id} href={`/products/${product.id}`}>
             <MostSelling

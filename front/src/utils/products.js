@@ -15,7 +15,7 @@ export const products = [
       "observations": "Disponible en varios colores"
     },
     "available": true,
-    "categories": ["Sillones", "Sala de Estar"]
+    "categories": ["Sofás", "Sala de Estar"]
   },
   {
     "id": 2,
