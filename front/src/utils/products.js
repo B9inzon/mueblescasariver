@@ -15,7 +15,7 @@ export const products = [
       "observations": "Disponible en varios colores"
     },
     "available": true,
-    "categories": ["Sofás", "Sala de Estar"]
+    "categories": ["Sofás", "Sala de estar"]
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@ export const products = [
       "observations": "Superficie resistente a manchas"
     },
     "available": true,
-    "categories": ["Mesas", "Sala de Estar"]
+    "categories": ["Mesas", "Sala de estar" ]
   },
   {
     "id": 3,
@@ -51,7 +51,7 @@ export const products = [
       "observations": "Funda extraíble y lavable"
     },
     "available": true,
-    "categories": ["Sofás", "Sala de Estar"]
+    "categories": ["Sofás", "Sala de estar"]
   },
   {
     "id": 4,
@@ -87,7 +87,7 @@ export const products = [
       "observations": "Fácil montaje sin herramientas"
     },
     "available": true,
-    "categories": ["Estanterías", "Almacenamiento"]
+    "categories": ["Almacenamiento"]
   },
   {
     "id": 6,
@@ -105,7 +105,7 @@ export const products = [
       "observations": "Incluye bombilla LED"
     },
     "available": true,
-    "categories": ["Iluminación", "Decoración"]
+    "categories": ["Iluminación", "Sala de estar", "Estudio"]
   },
   {
     "id": 7,
@@ -159,7 +159,7 @@ export const products = [
       "observations": "Incluye organizador de cables"
     },
     "available": true,
-    "categories": ["Escritorios", "Oficina"]
+    "categories": ["Escritorios", "Estudio"]
   },
   {
     "id": 10,
@@ -177,7 +177,7 @@ export const products = [
       "observations": "Altura ajustable mediante pistón de gas"
     },
     "available": false,
-    "categories": ["Taburetes", "Cocina"]
+    "categories": ["Taburetes", "Sala de estar"]
   },
   {
     "id": 11,
@@ -213,7 +213,7 @@ export const products = [
       "observations": "Incluye kit de montaje"
     },
     "available": true,
-    "categories": ["Espejos", "Decoración"]
+    "categories": ["Espejos", "Sala de estar", "Dormitorio"]
   }
 ];
   
