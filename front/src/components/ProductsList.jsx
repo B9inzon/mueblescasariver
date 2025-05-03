@@ -24,12 +24,13 @@ export default function ProductsList() {
 
   return (
     <section className=" flex w-full justify-center gap-4 min-h-screen ">
-      <div className=" w-auto h-screen pt-40 bg-amber-500 ">
-        <div className="flex flex-col gap-3">
+      <div className=" w-auto h-screen pt-40  border-x px-4 border-[#3c3a36] sticky top-0 ">
+        <h4 className="text-center mb-4 font-bold text-[#3c3a36]">Filtrar por:</h4>
+        <div className="flex flex-col gap-2">
           {categories.map((category) => (
             <button
               key={category}
-              className={`px-4 py-2 rounded-full font-semibold transition-colors ${
+              className={`px-4  rounded-full font-semibold transition-colors ${
                 activeCategory === category
                   ? "bg-[#a9a8a3] text-[#fcfcfa] "
                   : "bg-[#e9e6e2] hover:bg-[#d9d8d1] text-[#3c3a36]"
@@ -43,10 +44,11 @@ export default function ProductsList() {
           ))}
         </div>
       </div>
-      <div className="flex w-[80%] flex-col min-h-screen items-center bg-red-400">
+      <div className="flex w-[80%] flex-col min-h-screen items-center ">
         <h1 className="flex font-secondary items-center justify-center text-center  w-full h-[25vh] text-[10vw] md:text-[7vw] lg:text-[4vw] text-[#3c3a36] ">
           Conoce nuestros productos
         </h1>
+          <h4 className="flex mb-8 ml-[8vw] pl-5 w-full text-[4vw]  md:text-[4vw] lg:text-[1vw] text-[#3c3a36] "> {`${activeCategory.toUpperCase()}`}</h4>
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-1 md:gap-4 xl:gap-2 ">
           {filteredProducts.map((product) => {
             return (
