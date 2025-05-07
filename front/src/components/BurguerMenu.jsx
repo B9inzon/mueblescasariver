@@ -27,7 +27,7 @@ const BurguerMenu = ({ isOpen, onToggle }) => {
       )}
 
       <div
-        className={`fixed top-0 right-0 min-h-screen w-2/3 md:w-1/2 bg-gradient-to-b from-[#eae6d2] via-[#a09b92] to-[#78746d] shadow-lg transform ${
+        className={`fixed top-0 right-0 min-h-screen w-4/5 md:w-1/2 bg-[#fdfdfc] shadow-lg transform pl-4 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out lg:hidden z-60`}
       >
@@ -36,7 +36,7 @@ const BurguerMenu = ({ isOpen, onToggle }) => {
             <CloseIcon size={32} color="#3c3a36" />
           </button>
         </div>
-        <ul className="flex h-full flex-col font-medium items-center space-y-6 text-xl mt-10 text-[#3C3A36] transition">
+        <ul className="flex h-full flex-col font-medium items-left space-y-6 text-xl mt-10 text-[#3C3A36] transition">
           <li>
             <Link href="/" onClick={switchMenu}>
               Inicio
