@@ -49,16 +49,16 @@ export const Navigation = () => {
       <nav className="">
         <ul className="hidden lg:flex flex-row gap-10 text-lg font-semibold">
           <li>
-            <a href="/">Inicio</a>
+            <Link href="/">Inicio</Link>
           </li>
           <li>
-            <a href="/products">Catálogo</a>
+            <Link href="/products">Catálogo</Link>
           </li>
           <li>
-            <a href="/contact">Contacto</a>
+            <Link href="/contact">Contacto</Link>
           </li>
           <li>
-            <a href="/about">Acerca de nosotros</a>
+            <Link href="/about">Acerca de nosotros</Link>
           </li>
         </ul>
         <div className="lg:hidden">

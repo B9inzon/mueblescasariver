@@ -2,6 +2,7 @@
 
 import { MenuIcon } from "./icons/MenuIcon";
 import { CloseIcon } from "./icons/CloseIcon";
+import Link from "next/link";
 
 const BurguerMenu = ({ isOpen, onToggle }) => {
   const switchMenu = () => {
@@ -15,7 +16,7 @@ const BurguerMenu = ({ isOpen, onToggle }) => {
         className="lg:hidden flex items-center justify-center"
         aria-label="Toggle menu"
       >
-        <MenuIcon size={32} color="#3c3a36" strokeWidth={2} />
+        <MenuIcon size={32}  strokeWidth={2} />
       </button>
 
       {isOpen && (
@@ -37,24 +38,24 @@ const BurguerMenu = ({ isOpen, onToggle }) => {
         </div>
         <ul className="flex h-full flex-col font-medium items-center space-y-6 text-xl mt-10 text-[#3C3A36] transition">
           <li>
-            <a href="/" onClick={switchMenu}>
+            <Link href="/" onClick={switchMenu}>
               Inicio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/products" onClick={switchMenu}>
+            <Link href="/products" onClick={switchMenu}>
               Catálogo
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact" onClick={switchMenu}>
+            <Link href="/contact" onClick={switchMenu}>
               Contacto
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" onClick={switchMenu}>
+            <Link href="/about" onClick={switchMenu}>
               Acerca de nosotros
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

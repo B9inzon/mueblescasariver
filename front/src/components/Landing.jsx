@@ -36,16 +36,16 @@ export const Landing = () => {
           </div>
         </div>
         <div className="  flex w-full h-full items-start justify-center ">
-          <a
+          <Link
             href="/products"
             rel="noopener noreferrer"
-            className=" flex items-center justify-center bg-[#c6ad2e]	 p-1 md:p-3 w-[250px] md:w-[300px] lg:w-[350px]  rounded-4xl gap-4  hover:scale-105 transition-all duration-600 ease-in-out "
+            className=" flex items-center justify-center btn  p-1 md:p-3 w-[250px] md:w-[300px] lg:w-[350px]  rounded-4xl gap-4  hover:scale-105 transition-all duration-600 ease-in-out "
             style={{ filter: "drop-shadow(10px 10px 6px #282624)" }}
           >
             <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-3xl  transition-all duration-900 ease-in-out ">
               Catálogo
             </h3>
-          </a>
+          </Link>
         </div>
       </section>
       <section className="flex flex-col h-full w-full items-center  text-[#3C3A36]">
@@ -112,7 +112,7 @@ export const Landing = () => {
             para consultar el color, los materiales y los detalles adicionales
             que desees en tu mueble.{" "}
             <span className="font-semibold">
-              <a href="/TyC">Vease terminos y condiciones</a>
+              <Link href="/TyC">Vease terminos y condiciones</Link>
             </span>
             .
           </p>
@@ -123,7 +123,7 @@ export const Landing = () => {
           </ul>
         </div>
       </section>
-      <LandingAbout />
+      <LandingAbout  />
     </>
   );
 };

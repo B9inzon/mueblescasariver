@@ -5,14 +5,14 @@ import React from "react";
 export default function page() {
   return (
     <div className="flex flex-col w-full py- justify-center  items-center text-[#3c3a36] ">
-      <div className=" relative flex flex-col items-center justify-center w-full h-screen lg:w-full p-4 mb-8   lg:p-12  bg-[url('/assets/Living-3000.jpg')] grayscale-75 bg-cover bg-bottom">
-        <Logo  />
+      <div className=" relative flex flex-col items-center justify-center w-full h-[95vh] lg:w-full p-4 mb-30   lg:p-12  bg-[url('/assets/Living-3000.jpg')] grayscale-75 bg-cover bg-bottom">
+        <h1 className="text-[10vw] sm:text-5xl xl:text-8xl text-[#eeece9] font-principal ">Muebles Casa River</h1>
         <div className=" absolute inset-0 -z-1   bg-black opacity-60  "></div>
       </div>
-      <h1 className="font-semibold text-center w-[40vw] text-4xl mb-10 ">
+      <h1 className="font-semibold text-center w-full lg:w-[40vw] text-[6vw] sm:text-4xl mb-5 lg:mb-10 ">
         Sobre Muebles Casa River
       </h1>
-      <p className="w-[40vw] text-justify font-medium text-base">
+      <p className="w-[80vw] lg:w-[40vw] text-justify font-medium text-base">
         <span className="font-bold">Muebles Casa River</span> es un catálogo en
         línea donde puedes ver nuestros productos, solicitar una cotización o
         simplemente contactarnos para recibir atención personalizada e
@@ -23,7 +23,7 @@ export default function page() {
         lugar en el que te encuentres.
       </p>
       <br />
-      <p className="w-[40vw] text-justify font-medium text-base mb-10">
+      <p className="w-[80vw] lg:w-[40vw] text-justify font-medium text-base mb-10">
         Con más de 25 años de experiencia fabricando, diseñando y distribuyendo
         muebles de excelente calidad y diseño a precios justos, en <span className="font-bold">Muebles Casa River</span> tenemos como
         prioridad la satisfacción de nuestros clientes. Por ello, nos
@@ -34,7 +34,7 @@ export default function page() {
         sin importar dónde se encuentren, porque sabemos que tu próximo mueble
         favorito lo encuentras con nosotros.
       </p>
-      <div className="flex justify-around p-2 items-center border-2 rounded-lg  w-[40vw]">
+      <div className="flex justify-around p-2 items-center sm:border-2 sm:rounded-lg mb-20 w-full sm:w-[80vw]  lg:w-[40vw] ">
         <VisionIcon />
         <p className="text-justify font-semibold w-[60%] ">
           Nuestro objetivo es ofrecer a nuestros clientes, en un solo lugar y de

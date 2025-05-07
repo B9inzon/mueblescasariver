@@ -13,8 +13,10 @@ export default function ProductsList() {
 
   const uniqueCategories = [
     ...new Set(products.flatMap((product) => product.categories)),
-  ];
+  ].sort((a, b) => a.localeCompare(b))
+
   const categories = ["todos", ...uniqueCategories];
+
   const filteredProducts =
     activeCategory === "todos"
       ? products
@@ -24,16 +26,16 @@ export default function ProductsList() {
 
   return (
     <section className=" flex w-full justify-center gap-4 min-h-screen ">
-      <div className=" w-auto h-screen pt-40  border-x px-4 border-[#3c3a36] sticky top-0 ">
+      <div className=" w-auto h-screen pt-40   sticky top-0 ">
         <h4 className="text-center mb-4 font-bold text-[#3c3a36]">Filtrar por:</h4>
         <div className="flex flex-col gap-2">
           {categories.map((category) => (
             <button
               key={category}
-              className={`px-4  rounded-full font-semibold transition-colors ${
+              className={`px-4 text-left rounded-sm font-semibold transition-colors ${
                 activeCategory === category
                   ? "bg-[#a9a8a3] text-[#fcfcfa] "
-                  : "bg-[#e9e6e2] hover:bg-[#d9d8d1] text-[#3c3a36]"
+                  : " hover:bg-[#e0dfda] text-[#3c3a36]"
               }`}
               onClick={() => setActiveCategory(category)}
             >

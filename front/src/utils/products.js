@@ -130,7 +130,7 @@ export const products = [
     "name": "Silla de Comedor",
     "description": "Silla de comedor ergonómica con asiento acolchado y respaldo de rejilla.",
     "price": 89.99,
-    "discount": 0.05,
+    "discount": 0,
     "images": ["https://ambientegourmet.vtexassets.com/arquivos/ids/236993-800-auto?v=638792049072600000&width=800&height=auto&aspect=true"],
     "information": {
       "dimensions": "45x55x85 cm",
@@ -166,7 +166,7 @@ export const products = [
     "name": "Taburete de Bar",
     "description": "Taburete alto ajustable con reposapiés y asiento giratorio.",
     "price": 119.99,
-    "discount": 0.10,
+    "discount": 0,
     "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DgyX2ZsKSkOO4mPS1qELdvbmAUj2bAVe_g&s"],
     "information": {
       "dimensions": "45x45x65-85 cm",
@@ -202,7 +202,7 @@ export const products = [
     "name": "Espejo de Pared",
     "description": "Espejo redondo con marco de latón y cadena para colgar.",
     "price": 79.99,
-    "discount": 0.05,
+    "discount": 0,
     "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY5DuDILNqTe4KkqxMtF9I5L0SuDm--7NUXQ&s"],
     "information": {
       "dimensions": "80x80x3 cm",
