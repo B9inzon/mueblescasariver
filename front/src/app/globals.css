@@ -6,8 +6,7 @@
   font-size: 100%;
 }
 
-@theme  {
-  
+@theme {
   /* Colores */
 
   --color-background: var(--background);
@@ -33,7 +32,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-secondary), sans-serif;
   line-height: 1.5;
-
 }
 
 .font-principal {
@@ -44,14 +42,37 @@ body {
   font-family: var(--font-secondary);
 }
 
-.btn{
-  background-color: #c6ad2e;
+
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translate(0, -50%);
+  font-size: 100px;
+  font-weight: 600;
+  color: #3c3a36;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translate(0, -50%);
+  font-size: 100px;
+  font-weight: 600;
+  color: #3c3a36;
+  z-index: 1;
+  cursor: pointer;
 }
 
 ol,
 ul {
   list-style: none;
 }
+
 
 a {
   text-decoration: none;
@@ -81,4 +102,3 @@ a:hover {
   scrollbar-width: none;
   /* Firefox */
 }
-
