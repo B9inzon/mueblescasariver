@@ -21,21 +21,18 @@ export default function ProductDetail({
   const showCategories = categories.filter(category => category !== "-").map(category => category.trim())
 
   return (
-    <div className="flex flex-col items-center pt-24 lg:pt-38 min-h-screen ">
-      <div className="flex flex-col w-full lg:h-[80vh] lg:w-full  lg:flex-row md:px-10 lg:px-14 xl:px-[15vw] gap-5 lg:gap-20  ">
+    <div className="flex flex-col items-center lg:pt-38 min-h-screen   ">
+      <div className="flex flex-col w-full lg:h-[80vh] lg:w-full  lg:flex-row md:px-10 lg:px-14 xl:px-[15vw] gap-5 lg:gap-20   ">
         <div className="flex flex-col justify-between items-center w-full h-[70vh] lg:h-full lg:w-[60%] gap-4  ">
-          <div className="flex w-full h-full sm:w-[90vw] sm:h-[70vw] lg:w-full justify-center lg:h-full  ">
+          <div className="flex w-full h-full sm:w-[90vw] sm:h-[70vw] lg:w-full justify-center lg:h-[60vh]   ">
             <div
               className=" flex max-w-full max-h-full w-full h-full
                  md:w-full md:h-full bg-cover bg-center border border-[#3c3a36] "
               style={{ backgroundImage: `url(${images})` }}
             ></div>
-          </div>
-          <div className="flex bg-slate-500 w-full items-center justify-center h-[40%] lg:h-[30%] text-3xl font-bold">
-            AQUI VAN LAS IMÁGENES DEL CARRUSEL
-          </div>
+          </div>          
         </div>
-        <div className="flex  flex-col w-full text-[#3c3a36] h-[40vh] lg:h-full lg:w-[40%] gap-2 px-4 lg:pl-5 lg:pt-2 ">
+        <div className="flex  flex-col w-full text-[#3c3a36] h-[40vh] lg:h-full lg:w-[40%] gap-2 px-4 lg:pl-5 lg:pt-2  ">
           <h2 className="text-2xl lg:text-5xl font-semibold mb-10">{name}</h2>
           <p className="text-sm lg:text-xl mb-8">{description}</p>
           <h2 className="font-semibold">Precio de venta:</h2>
