@@ -3,7 +3,7 @@ export const products = [
     "id": 1,
     "name": "Sillón de Terciopelo",
     "description": "Un sillón moderno con acabado de terciopelo.",
-    "price": 4444,
+    "price": 3799900,
     "discount": 0.1,
     "images": "https://www.tiendason.es/wp/wp-content/uploads/sofa-terciopelo-azul-1.jpg",
     "information": {
@@ -21,7 +21,7 @@ export const products = [
     "id": 2,
     "name": "Mesa de Centro de Mármol",
     "description": "Elegante mesa de centro con superficie de mármol y base metálica.",
-    "price": 349.99,
+    "price": 1500900,
     "discount": 0.17,
     "images": ["https://http2.mlstatic.com/D_Q_NP_677601-MLU72203471346_102023-O.webp"],
     "information": {
@@ -39,7 +39,7 @@ export const products = [
     "id": 3,
     "name": "Sofá Seccional",
     "description": "Amplio sofá seccional con chaise longue y tapizado de lino.",
-    "price": 899.99,
+    "price": 3778103,
     "discount": 0.2,
     "images": ["https://m.media-amazon.com/images/I/71xbd68DgQL._AC_SL1500_.jpg"],
     "information": {
@@ -57,7 +57,7 @@ export const products = [
     "id": 4,
     "name": "Cama con Dosel",
     "description": "Cama elegante con dosel y cabecero tapizado.",
-    "price": 599.99,
+    "price": 2518721,
     "discount": 0.2,
     "images": ["https://http2.mlstatic.com/D_NQ_NP_889351-MCO80525547580_112024-O.webpg"],
     "information": {
@@ -75,7 +75,7 @@ export const products = [
     "id": 5,
     "name": "Estantería Modular",
     "description": "Sistema de estanterías personalizable con módulos intercambiables.",
-    "price": 249.99,
+    "price": 1049442,
     "discount": 0.10,
     "images": ["https://i0.wp.com/prodalca.com.co/wp-content/uploads/2018/05/estanteria-hardboard.jpg?fit=1600%2C1600&ssl=1"],
     "information": {
@@ -93,7 +93,7 @@ export const products = [
     "id": 6,
     "name": "Lámpara de Pie",
     "description": "Lámpara de pie con pantalla ajustable y base de mármol.",
-    "price": 129.99,
+    "price": 545690,
     "discount": 0.10,
     "images": ["https://media.falabella.com/sodimacCO/372017_01/w=800,h=800,fit=pad"],
     "information": {
@@ -111,7 +111,7 @@ export const products = [
     "id": 7,
     "name": "Mesa de Comedor Extensible",
     "description": "Mesa de comedor extensible para 6-10 personas con acabado de roble.",
-    "price": 499.99,
+    "price": 2098927,
     "discount": 0.2,
     "images": ["https://ambienta.com.co/wp-content/uploads/2018/04/HomeLoft-Mesa_comedor-HT2069-5.jpg"],
     "information": {
@@ -129,7 +129,7 @@ export const products = [
     "id": 8,
     "name": "Silla de Comedor",
     "description": "Silla de comedor ergonómica con asiento acolchado y respaldo de rejilla.",
-    "price": 89.99,
+    "price": 377772,
     "discount": 0,
     "images": ["https://ambientegourmet.vtexassets.com/arquivos/ids/236993-800-auto?v=638792049072600000&width=800&height=auto&aspect=true"],
     "information": {
@@ -147,7 +147,7 @@ export const products = [
     "id": 9,
     "name": "Escritorio con Cajones",
     "description": "Escritorio funcional con tres cajones y superficie amplia.",
-    "price": 279.99,
+    "price": 1175381,
     "discount": 0.10,
     "images": ["https://bylmo.com/cdn/shop/products/Escritorio-Khali-Miel-100-cm-con-Dos-Cajones_RTAEMT9438-3.jpg?v=1689110294&width=1500"],
     "information": {
@@ -165,7 +165,7 @@ export const products = [
     "id": 10,
     "name": "Taburete de Bar",
     "description": "Taburete alto ajustable con reposapiés y asiento giratorio.",
-    "price": 119.99,
+    "price": 503710,
     "discount": 0,
     "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DgyX2ZsKSkOO4mPS1qELdvbmAUj2bAVe_g&s"],
     "information": {
@@ -183,7 +183,7 @@ export const products = [
     "id": 11,
     "name": "Cómoda de Madera",
     "description": "Cómoda de cinco cajones con acabado vintage y tiradores de latón.",
-    "price": 329.99,
+    "price": 1385278,
     "discount": 0.15,
     "images": ["https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/73035402_1/w=1500,h=1500,fit=pad"],
     "information": {
@@ -201,7 +201,7 @@ export const products = [
     "id": 12,
     "name": "Espejo de Pared",
     "description": "Espejo redondo con marco de latón y cadena para colgar.",
-    "price": 79.99,
+    "price": 335793,
     "discount": 0,
     "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY5DuDILNqTe4KkqxMtF9I5L0SuDm--7NUXQ&s"],
     "information": {

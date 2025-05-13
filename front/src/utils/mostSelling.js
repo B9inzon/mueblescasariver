@@ -4,7 +4,7 @@ export const mostSelling = [
         "id": 1,
     "name": "Sillón de Terciopelo",
     "description": "Un sillón moderno con acabado de terciopelo.",
-    "price": 199.99,
+    "price": 3799900,
     "discount": 0.1,
     "images": "https://www.tiendason.es/wp/wp-content/uploads/sofa-terciopelo-azul-1.jpg",
     "information": {
@@ -23,7 +23,7 @@ export const mostSelling = [
         "id": 3,
     "name": "Sofá Seccional",
     "description": "Amplio sofá seccional con chaise longue y tapizado de lino.",
-    "price": 899.99,
+    "price": 3778103,
     "discount": 0.2,
     "images": ["https://m.media-amazon.com/images/I/71xbd68DgQL._AC_SL1500_.jpg"],
     "information": {
@@ -41,7 +41,7 @@ export const mostSelling = [
         "id": 11,
     "name": "Cómoda de Madera",
     "description": "Cómoda de cinco cajones con acabado vintage y tiradores de latón.",
-    "price": 329.99,
+    "price": 1385278,
     "discount": 0.15,
     "images": ["https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/73035402_1/w=1500,h=1500,fit=pad"],
     "information": {
@@ -59,7 +59,7 @@ export const mostSelling = [
         "id": 2,
     "name": "Mesa de Centro de Mármol",
     "description": "Elegante mesa de centro con superficie de mármol y base metálica.",
-    "price": 349.99,
+    "price": 1500900,
     "discount": 0.17,
     "images": ["https://http2.mlstatic.com/D_Q_NP_677601-MLU72203471346_102023-O.webp"],
     "information": {
