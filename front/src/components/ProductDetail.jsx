@@ -21,9 +21,9 @@ export default function ProductDetail({
   const showCategories = categories.filter(category => category !== "-").map(category => category.trim())
 
   return (
-    <div className="flex flex-col items-center lg:pt-38 min-h-screen   ">
-      <div className="flex flex-col w-full lg:h-[80vh] lg:w-full  lg:flex-row md:px-10 lg:px-14 xl:px-[15vw] gap-5 lg:gap-20   ">
-        <div className="flex flex-col justify-between items-center w-full h-[70vh] lg:h-full lg:w-[60%] gap-4  ">
+    <div className="flex flex-col items-center  lg:pt-38 min-h-screen  ">
+      <div className="flex flex-col w-full h-full lg:h-[70vh] lg:w-full  lg:flex-row md:px-10 lg:px-14 xl:px-[15vw] gap-5 pt-20 lg:gap-20  ">
+        <div className="flex flex-col  items-center w-full h-[70vh] lg:h-full lg:w-[60%]   ">
           <div className="flex w-full h-full sm:w-[90vw] sm:h-[70vw] lg:w-full justify-center lg:h-[60vh]   ">
             <div
               className=" flex max-w-full max-h-full w-full h-full
@@ -32,7 +32,7 @@ export default function ProductDetail({
             ></div>
           </div>          
         </div>
-        <div className="flex  flex-col w-full text-[#3c3a36] h-[40vh] lg:h-full lg:w-[40%] gap-2 px-4 lg:pl-5 lg:pt-2  ">
+        <div className="flex  flex-col w-full text-[#3c3a36] xxs:h-[60vh] xs:h-[45vh] lg:h-full lg:w-[40%] gap-2 px-4 lg:pl-5 lg:pt-2  ">
           <h2 className="text-2xl lg:text-5xl font-semibold mb-10">{name}</h2>
           <p className="text-sm lg:text-xl mb-8">{description}</p>
           <h2 className="font-semibold">Precio de venta:</h2>
@@ -70,6 +70,22 @@ export default function ProductDetail({
           </div>
         </div>
       </div>
+
+      {/* //! INFORMACIÓN DEL PRODUCTO */}
+      <div className="flex flex-col  text-[#3c3a36] md:px-10 lg:px-14 mt-12 xl:px-[15vw] w-full ">
+        <h2 className="text-2xl lg:text-3xl px-1 md:px-0 mb-4 lg:mb-8">Información del producto</h2>
+        <table className="flex w-full h-full  px-1 md:px-0 ">
+          <tbody className="flex flex-col justify-center w-full lg:w-[80%]  ">
+            {Object.entries(information).map(([key, value]) => (
+              <tr className="flex flex-row h-fit items-center justify-between py-3 border-b border-[#3c3a36]/20 " key={key}>
+                <td className="w-[30vw] font-semibold capitalize">{key}</td>
+                <td className="w-[60vw]">{value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
       <h1 className="flex font-secondary items-center justify-center text-center font-semibold w-full h-[20vh] text-[10vw] md:text-[7vw] lg:text-[4vw] xl:text-[3vw] text-[#3c3a36] mt-20 ">
         Lo más vendido
       </h1>

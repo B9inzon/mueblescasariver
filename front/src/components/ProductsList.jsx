@@ -57,7 +57,7 @@ export default function ProductsList() {
         </div>
       </div>
       <div className="flex w-full lg:w-[80%] flex-col min-h-screen items-center ">
-        <h1 className="flex font-secondary items-center justify-center text-center  w-full h-[15vh] lg:h-[18vh] text-[6vw] font-bold md:text-[5vw] lg:text-[4vw] text-[#3c3a36]   ">
+        <h1 className="flex font-secondary items-center justify-center text-center  w-full h-[15vh] lg:h-[18vh] text-[6vw] font-semibold md:text-[5vw] lg:text-[4vw] text-[#3c3a36]   ">
           Conoce nuestros productos
         </h1>
         <div className="flex flex-row h-[6vh] w-full xl:w-[69.3vw] items-center  px-5 lg:px-0 gap-6 mb-5 lg:mb-0   ">
@@ -69,8 +69,8 @@ export default function ProductsList() {
               setActiveCategory={setActiveCategory}
             />
           </div>
-          <h4 className="flex ] text-base  text-[#3c3a36]  ">
-            {`${activeCategory.toUpperCase()}`}
+          <h4 className="flex ] text-base  text-[#3c3a36] capitalize  ">
+            {`${activeCategory}`}
           </h4>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-1 md:gap-4 xl:gap-2  ">

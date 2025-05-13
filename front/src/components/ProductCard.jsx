@@ -23,15 +23,16 @@ export default function ProductCard({ images, name, price, discount }) {
       <div className="flex flex-col w-full h-[50%] md:h-[40%] xl:h-[40%]  text-center text-sm md:text-lg lg:text-xl ">
         <h4 className="w-full h-[50%]  pt-8 ">{name}</h4>
         <h4>
+          <span className="text-green-500 text-xl font-bold mr-2">${finalPrice}</span>
+
           <span
-            className={`line-through text-[#3c3a36]/50 mr-2 ${
+            className={`line-through text-base text-[#3c3a36]/50 ${
               percentageOff <= 0 ? "hidden" : ""
             }`}
           >
             ${price}
           </span>
-          <span className="text-green-500 font-bold">${finalPrice}</span>
-        </h4>{" "}
+        </h4>
       </div>
     </div>
   );
