@@ -5,6 +5,12 @@ export default function ProductCard({ images, name, price, discount }) {
   const finalPrice = discountedPrice(price, discount);
   const percentageOff = discount * 100;
 
+  const formatter = new Intl.NumberFormat("es-CO", {
+    style: "currency",
+    currency: "COP",
+    maximumFractionDigits: 0,
+  })
+
   return (
     <div className="relative flex flex-col justify-between items-center px-1 md:px-2 pt-2.5 min-h-[400px] w-[48vw] h-[70vw] md:w-[31vw] md:h-[65vw] lg:w-[25.5vw] lg:h-[50vw] xl:w-[17vw] xl:h-[500px] border border-[#3c3a36] text-[#3c3a36]  ">
       <div
@@ -23,14 +29,14 @@ export default function ProductCard({ images, name, price, discount }) {
       <div className="flex flex-col w-full h-[50%] md:h-[40%] xl:h-[40%]  text-center text-sm md:text-lg lg:text-xl ">
         <h4 className="w-full h-[50%]  pt-8 ">{name}</h4>
         <h4>
-          <span className="text-green-500 text-xl font-bold mr-2">${finalPrice}</span>
+          <span className="text-green-500 text-xl font-bold mr-2">{formatter.format(finalPrice)}</span>
 
           <span
             className={`line-through text-base text-[#3c3a36]/50 ${
               percentageOff <= 0 ? "hidden" : ""
             }`}
           >
-            ${price}
+            {formatter.format(price)}
           </span>
         </h4>
       </div>

@@ -7,6 +7,5 @@ export default function discountedPrice(price, discount = 0.15) {
     throw new Error("El descuento debe ser un número entre 0 y 1");
   }
 
-  const discounted = price * (1 - discount);
-  return discounted.toFixed(2);
+  return price * (1 - discount);
 }
