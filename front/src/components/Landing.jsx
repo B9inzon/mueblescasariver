@@ -28,7 +28,7 @@ export const Landing = () => {
           <Link
             href="/products"
             rel="noopener noreferrer"
-            className=" flex items-center justify-center bg-[#c9c2b7]/55 hover:bg-[#c9c2b7]   p-1 md:p-2 w-auto lg:w-auto rounded-lg  hover:scale-103 transition-all duration-600 ease-in-out "
+            className=" flex items-center justify-center bg-[#c9c2b7]/75 hover:bg-[#c9c2b7]   p-1 md:p-2 w-auto lg:w-auto rounded-lg  hover:scale-103 transition-all duration-600 ease-in-out "
             style={{ filter: "drop-shadow(10px 10px 6px #282624)" }}
           >
             <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-4xl px-2  transition-all duration-900 ease-in-out ">
