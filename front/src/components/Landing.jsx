@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { landingCategories } from "@/utils/landing-categories";
@@ -13,26 +13,26 @@ import HeroLanding from "./HeroLanding";
 export const Landing = () => {
   return (
     <>
-      <section className=" relative flex flex-col w-full items-center justify-center pt- text-[] h-screen ">
-       <HeroLanding/>
-       <div className="absolute z-1 flex left-0 items-center justify-center w-full pb-10 lg:w-1/2 lg:py-0 lg:h-full">
-            <h1 className="font-principal w-full max-w-2xl text-[[#eeece9] px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
-              Diseño y calidad{" "}
-              <span className="block mt-2 text-6xl md:text-6xl lg:text-8xl font-bold">
-                en un solo lugar
-              </span>
-            </h1>
-          </div>
-       <div className=" absolute z-0 inset-0  bg-black/60  "></div>        
-        <div className="absolute z-1 bottom-10 xl:right-60  flex w-100 h-20 items-center justify-center   ">
+      <section className=" relative flex flex-col w-full items-center justify-center  h-screen ">
+        <HeroLanding />
+        <div className="absolute z-1  flex left-0 items-center justify-center w-full pb-10 lg:w-1/2 lg:py-0 lg:h-full">
+          <h1 className="font-principal w-full max-w-2xl text-[[#eeece9] px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
+            Diseño y calidad{" "}
+            <span className="block  mt-2 text-6xl md:text-6xl lg:text-8xl font-bold">
+              en un solo lugar
+            </span>
+          </h1>
+        </div>
+        <div className=" absolute z-0 inset-0  bg-black/60  "></div>
+        <div className="absolute z-1 bottom-20 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center  ">
           <Link
             href="/products"
             rel="noopener noreferrer"
-            className=" flex items-center justify-center bg-[#c9c2b7]  p-1 md:p-3 w-[250px] md:w-[300px] lg:w-[350px]  rounded-4xl gap-4  hover:scale-105 transition-all duration-600 ease-in-out "
+            className=" flex items-center justify-center bg-[#c9c2b7]/55 hover:bg-[#c9c2b7]   p-1 md:p-2 w-auto lg:w-auto rounded-lg  hover:scale-103 transition-all duration-600 ease-in-out "
             style={{ filter: "drop-shadow(10px 10px 6px #282624)" }}
           >
-            <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-3xl  transition-all duration-900 ease-in-out ">
-              Catálogo
+            <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-4xl px-2  transition-all duration-900 ease-in-out ">
+              Conoce nuestros productos &#10143;
             </h3>
           </Link>
         </div>
@@ -112,7 +112,7 @@ export const Landing = () => {
           </ul>
         </div>
       </section>
-      <LandingAbout  />
+      <LandingAbout />
     </>
   );
 };

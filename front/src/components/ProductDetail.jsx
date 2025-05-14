@@ -51,7 +51,7 @@ export default function ProductDetail({
             ({percentageOff}%)
           </span>
           </h3>
-          <h4 className="mb-10" >¡Ahórrate <span className="font-semibold text-red-500">{formatter.format(price - finalPrice)}!</span> </h4>
+          <h4 className="mb-10" >Ahórrate <span className="font-semibold text-red-500">{formatter.format(price - finalPrice)}</span></h4>
           <div className="flex flex-wrap items-center mb-10 gap-2 ">
             {showCategories.map((category, index) =>(
               <span key={index}

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { hero } from "@/utils/hero.js";
+import Image from "next/image";
 
 export default function HeroLanding() {
   const sliderRef = useRef();
@@ -29,7 +30,7 @@ export default function HeroLanding() {
       } else {
         setCurrentIndex((current) => current + 1);
       }
-    }, 6000);
+    }, 3000);
     return () => {
       if (tiemoutRef.current) {
         clearTimeout(tiemoutRef.current);
@@ -53,10 +54,12 @@ export default function HeroLanding() {
                   key={item.id}
                   className="flex-shrink-0 w-full h-full bg-fixed"
                 >
-                  <img
+                  <Image
                     src={item.imgUrl}
                     alt="Imagen de referencia"
                     className="w-full h-full object-cover grayscale-75 "
+                    width={500}
+                    height={500}
                   />
                 </li>
               );
