@@ -1,76 +1,101 @@
 export const mostSelling = [
-
-    {
-        "id": 1,
-    "name": "Sillón de Terciopelo",
-    "description": "Un sillón moderno con acabado de terciopelo.",
-    "price": 3799900,
-    "discount": 0.1,
-    "images": "https://www.tiendason.es/wp/wp-content/uploads/sofa-terciopelo-azul-1.jpg",
-    "information": {
-      "dimensions": "80x80x90 cm",
-      "structure": "Madera y metal",
-      "filling": "Espuma de alta densidad",
-      "legs": "Madera de haya maciza",
-      "upholstery": "Tela de terciopelo",
-      "observations": "Disponible en varios colores"
+  {
+    id: 1,
+    name: "Sillón de Terciopelo",
+    description: "Un sillón moderno con acabado de terciopelo.",
+    price: 3799900,
+    discount: 0.1,
+    images: [
+      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofa-terciopelo-azul-1.jpg",
+    ],
+    information: {
+      dimensiones: "80x80x90 cm",
+      estructura: "Madera y metal",
+      relleno: "Espuma de alta densidad",
+      patas: "Madera de haya maciza",
+      tapizado: "Tela de terciopelo",
+      observaciones:
+        "Disponible en varios colores. El valor de los decorados y detalles personalizados no incluido.",
     },
-    "available": true,
-    "categories": ["Sillones", "Sala de Estar"]
+    available: true,
+    categories: ["Sofás", "Sala de estar"],
   },
 
-      {
-        "id": 3,
-    "name": "Sofá Seccional",
-    "description": "Amplio sofá seccional con chaise longue y tapizado de lino.",
-    "price": 3778103,
-    "discount": 0.2,
-    "images": ["https://m.media-amazon.com/images/I/71xbd68DgQL._AC_SL1500_.jpg"],
-    "information": {
-      "dimensions": "280x180x85 cm",
-      "structure": "Madera de pino",
-      "filling": "Espuma y plumas",
-      "legs": "Madera de roble",
-      "upholstery": "Tela de lino",
-      "observations": "Funda extraíble y lavable"
+  {
+    id: 3,
+    name: "Sofá Seccional",
+    description: "Amplio sofá seccional con chaise longue y tapizado de lino.",
+    price: 3778103,
+    discount: 0.2,
+    images: [
+      "/assets/sofa-seccional.jpg",
+      "/assets/sofa-seccional.jpg",
+      "/assets/sofa-seccional.jpg",
+      "/assets/sofa-seccional.jpg",
+    ],
+    information: {
+      dimensiones: "280x180x85 cm",
+      estructura: "Madera de pino",
+      relleno: "Espuma y plumas",
+      patas: "Madera de roble",
+      tapizado: "Tela de lino",
+      observaciones:
+        "Funda extraíble y lavable. El valor de los decorados y detalles personalizados no incluido.",
     },
-    "available": true,
-    "categories": ["Sofás", "Sala de Estar"]
+    available: true,
+    categories: ["Sofás", "Sala de estar"],
   },
-      {
-        "id": 11,
-    "name": "Cómoda de Madera",
-    "description": "Cómoda de cinco cajones con acabado vintage y tiradores de latón.",
-    "price": 1385278,
-    "discount": 0.15,
-    "images": ["https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/73035402_1/w=1500,h=1500,fit=pad"],
-    "information": {
-      "dimensions": "90x45x120 cm",
-      "structure": "Madera de pino reciclada",
-      "filling": "No aplica",
-      "legs": "Patas cortas de madera",
-      "upholstery": "No aplica",
-      "observations": "Cada pieza es única debido a la madera reciclada"
+  {
+    id: 5,
+    name: "Estantería Modular",
+    description:
+      "Sistema de estanterías personalizable con módulos intercambiables.",
+    price: 1049442,
+    discount: 0.1,
+    images: [
+      "/assets/estanteria.webp",
+      "/assets/estanteria.webp",
+      "/assets/estanteria.webp",
+      "/assets/estanteria.webp",
+    ],
+    information: {
+      dimensiones: "180x120x35 cm",
+      estructura: "Madera de roble y metal",
+      relleno: "No aplica",
+      patas: "Patas ajustables de metal",
+      tapizado: "No aplica",
+      observaciones:
+        "Fácil montaje sin herramientas. El valor de los decorados y detalles personalizados no incluido.",
     },
-    "available": true,
-    "categories": ["Cómodas", "Dormitorio"]
+    available: true,
+    categories: ["Almacenamiento"],
   },
-      {
-        "id": 2,
-    "name": "Mesa de Centro de Mármol",
-    "description": "Elegante mesa de centro con superficie de mármol y base metálica.",
-    "price": 1500900,
-    "discount": 0.17,
-    "images": ["https://http2.mlstatic.com/D_Q_NP_677601-MLU72203471346_102023-O.webp"],
-    "information": {
-      "dimensions": "120x60x45 cm",
-      "structure": "Metal cromado",
-      "filling": "No aplica",
-      "legs": "Estructura de metal",
-      "upholstery": "No aplica",
-      "observations": "Superficie resistente a manchas"
+  {
+    id: 7,
+    name: "Mesa de Centro de Mármol",
+    description:
+      "Elegante mesa de centro con superficie de mármol y base metálica.",
+    price: 1500900,
+    discount: 0.17,
+    images: [
+      "/assets/mesa-de-centro.webp",
+      "/assets/mesa-de-centro.webp",
+      "/assets/mesa-de-centro.webp",
+      "/assets/mesa-de-centro.webp",
+    ],
+    information: {
+      dimensiones: "120x60x45 cm",
+      estructura: "Metal cromado",
+      relleno: "No aplica",
+      patas: "Estructura de metal",
+      tapizado: "No aplica",
+      observaciones:
+        "Superficie resistente a manchas. El valor de los decorados y detalles personalizados no incluido.",
     },
-    "available": true,
-    "categories": ["Mesas", "Sala de Estar"]
-  },   
-]
+    available: true,
+    categories: ["Mesas", "Sala de estar"],
+  },
+];

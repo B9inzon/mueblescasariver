@@ -86,7 +86,7 @@ export default function ProductsList() {
         <h1 className="flex font-secondary items-center justify-center text-center font-semibold w-full h-[20vh] text-[10vw] md:text-[7vw] lg:text-[3vw] text-[#3c3a36] ">
           Lo más vendido
         </h1>
-        <div className="grid grid-cols-2  lg:grid-cols-4  w-full items-center px-2 md:px-12 xl:px-[12vw] py-5 justify-center gap-4 ">
+        <div className="grid grid-cols-2  lg:grid-cols-4  w-full items-center px-2 md:px-8 xl:px-[10vw] py-5 justify-center gap-4  ">
           {mostSelling.map((product, id) => (
             <Link key={product.id} href={`/products/${product.id}`}>
               <MostSelling

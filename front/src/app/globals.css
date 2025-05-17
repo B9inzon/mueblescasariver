@@ -16,8 +16,8 @@
 
   /* Breakpoins */
 
-  --breakpoint-xs: 400px;
   --breakpoint-xxs: 350px;
+  --breakpoint-xs: 400px;
 }
 
 @media (prefers-color-scheme: dark) {

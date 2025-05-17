@@ -23,16 +23,16 @@ export default function ProductCard({ images, name, price, discount }) {
       <div className="group flex w-full h-[50%] md:h-[60%] overflow-hidden">
         <div
           className=" flex justify-center  w-full h-full scale-115 grayscale-0 lg:grayscale-75  hover:grayscale-0 bg-cover bg-center hover:scale-100 transition-all duration-600 ease-in-out  "
-          style={{ backgroundImage: `url(${images})` }}
+          style={{ backgroundImage: `url(${images.at()})` }}
         ></div>
       </div>
-      <div className="flex flex-col w-full h-[50%] md:h-[40%] xl:h-[40%]  text-center text-sm md:text-lg lg:text-xl ">
+      <div className="flex flex-col w-full h-[50%] md:h-[40%] xl:h-[40%]  text-center font-semibold  ">
         <h4 className="w-full h-[50%]  pt-8 ">{name}</h4>
-        <h4>
-          <span className="text-green-500 text-xl font-bold mr-2">{formatter.format(finalPrice)}</span>
+        <h4 className="flex flex-col justify-center xl:flex-row ">
+          <span className="text-green-500  font-bold mr-2">{formatter.format(finalPrice)}</span>
 
           <span
-            className={`line-through text-base text-[#3c3a36]/50 ${
+            className={`line-through text-[#3c3a36]/50 ${
               percentageOff <= 0 ? "hidden" : ""
             }`}
           >
