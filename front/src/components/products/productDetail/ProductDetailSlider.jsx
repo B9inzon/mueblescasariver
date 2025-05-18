@@ -15,7 +15,7 @@ export default function ProductDetailSlider({ images, name }) {
 
   return (
     <div className="flex flex-col w-full md:h-full lg:w-[42%] gap-4 items-center justify-center pt-20 md:pt-24 lg:pt-0 md:mb-8 lg:mb-0 xl:pl-4  ">
-      <div className="relative w-full md:w-[80%] lg:w-full max-w-[670px]  overflow-hidden bg-red-400 ">
+      <div className="relative w-full md:w-[80%] lg:w-full max-w-[670px] rounded-sm overflow-hidden bg-red-400 ">
         <img src={images.at(0)} alt={name} className="max-h-full w-full " />
 
         <button
