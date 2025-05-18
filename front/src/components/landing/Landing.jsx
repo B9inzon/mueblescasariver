@@ -13,10 +13,10 @@ import MostSelling from "../MostSelling";
 export const Landing = () => {
   return (
     <>
-      <section className=" relative flex flex-col w-full items-center justify-center  h-screen ">
+      <section className=" relative flex flex-col w-full items-center justify-center overflow-hidden mb-24 h-screen ">
         <HeroLanding />
-        <div className="absolute z-1  flex left-0  items-center justify-center w-full pb-10 lg:w-2/3 lg:py-0 lg:h-full ">
-          <h1 className="font-principal w-full max-w-2xl text-[#eeece9] px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
+        <div className="absolute z-1  flex left-0  items-center justify-center  w-full p-2 lg:py-0 h-full ">
+          <h1 className="font-principal w-full md:w-4/5   text-[#eeece9] px-6 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
             Diseño y calidad{" "}
             <span className="block  mt-2 text-6xl md:text-6xl lg:text-8xl font-bold">
               en un solo lugar
@@ -24,7 +24,7 @@ export const Landing = () => {
           </h1>
         </div>
         <div className=" absolute z-0 inset-0  bg-black/60  "></div>
-        <div className="absolute z-1 bottom-30 md:bottom-20 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center ">
+        <div className="absolute z-1 bottom-45 md:bottom-20 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center ">
           <Link
             href="/products"
             rel="noopener noreferrer"
@@ -37,14 +37,7 @@ export const Landing = () => {
           </Link>
         </div>
       </section>
-      <section className="flex flex-col h-full w-full items-center  text-[#3C3A36]">
-        <div className="flex items-center justify-center w-full h-[50vh] md:h-[250px] lg:h-[10vh] mb-30 bg-[#463C2D]">
-          <ul className="flex flex-col lg:flex-row gap-[8vh] lg:gap-20 xl:gap-50 font-secondary text-center text-lg lg:text-xl font-semibold xl:text-2xl text-[#eeece9] ">
-            <li>Diseños personalizados</li>
-            <li>Calidad sorprendente</li>
-            <li>Satisfacción garantizada</li>
-          </ul>
-        </div>
+      <section className="flex flex-col h-full w-full items-center  text-[#3C3A36]">        
         <h1 className="text-3xl lg:text-5xl mb-8 lg:mb-10 text-center px-4  ">
           ¿Buscando tu nuevo <span className="font-bold">mueble favorito</span>?
         </h1>
@@ -82,7 +75,7 @@ export const Landing = () => {
           </Link>
         ))}
       </div>
-      <section className="flex justify-center my-10 w-full h-auto lg:h-[50vh] bg-[#3c3a36]/20">
+      <section className="flex justify-center mb-24 w-full h-auto lg:h-[50vh] bg-[#3c3a36]/20">
         <div className="flex h-full text-[#3c3a36] w-full lg:w-[80%] p-5 flex-col items-center justify-center ">
           <h1 className="font-bold text-3xl lg:text-4xl mb-3 text-center ">
             Muebles Casa River catálogo online
@@ -112,7 +105,15 @@ export const Landing = () => {
           </ul>
         </div>
       </section>
+      <div className="flex items-center justify-center w-full h-[30vh] md:h-[250px] lg:h-[6vh] mb-24 bg-[#141312]">
+          <ul className="flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-50 font-secondary text-center text-2xl lg:text-xl font-semibold xl:text-2xl text-[#eeece9] ">
+            <li >Diseños personalizados</li>
+            <li >Calidad sorprendente</li>
+            <li >Satisfacción garantizada</li>
+          </ul>
+        </div>
       <LandingAbout />
+      
     </>
   );
 };
