@@ -1,11 +1,19 @@
 import React from "react";
 import Link from "next/link";
-import MostSelling from "../MostSelling";
+import MostSelling from "../../MostSelling";
 import { mostSelling } from "@/utils/mostSelling";
 import ProductDetailSlider from "./ProductDetailSlider";
 import ProductDetailInfo from "./ProductDetailInfo";
 
-export default function ProductDetail({ images, name, price, discount, description, information, categories }) {
+export default function ProductDetail({
+  images,
+  name,
+  price,
+  discount,
+  description,
+  information,
+  categories,
+}) {
   return (
     <div className="flex flex-col items-center lg:pt-38 min-h-screen   ">
       <div className="flex flex-col w-full lg:h-[60vh] lg:flex-row xl:gap-4 justify-center  ">
@@ -17,7 +25,6 @@ export default function ProductDetail({ images, name, price, discount, descripti
           description={description}
           categories={categories}
         />
-        
       </div>
 
       {/* //! INFORMACIÓN DEL PRODUCTO */}

@@ -2,13 +2,13 @@
 
 import React from "react";
 import { landingCategories } from "@/utils/landing-categories";
-import { LandingCategorySection } from "./LandingCategorySection";
-import ContactBanner from "./ContactBanner";
 import { LandingAbout } from "./LandingAbout";
-import MostSelling from "./MostSelling";
 import { mostSelling } from "@/utils/mostSelling";
 import Link from "next/link";
 import HeroLanding from "./HeroLanding";
+import ContactBanner from "../ContactBanner";
+import { LandingCategorySection } from "../LandingCategorySection";
+import MostSelling from "../MostSelling";
 
 export const Landing = () => {
   return (

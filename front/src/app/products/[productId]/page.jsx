@@ -1,6 +1,6 @@
 import React from "react";
 import { products } from "@/utils/products";
-import ProductDetail from "@/components/productDetail/ProductDetail";
+import ProductDetail from "@/components/products/productDetail/ProductDetail";
 import { notFound } from "next/navigation";
 
 export default async function page({ params }) {

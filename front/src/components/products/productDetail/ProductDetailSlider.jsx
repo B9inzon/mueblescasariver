@@ -1,12 +1,11 @@
-"use client"
+"use client";
 
 import React from "react";
 
-import { LeftArrowIcon } from "../icons/LeftArrowIcon";
-import { RighArrowIcon } from "../icons/RighArrowIcon";
+import { LeftArrowIcon } from "../../icons/LeftArrowIcon";
+import { RighArrowIcon } from "../../icons/RighArrowIcon";
 
-export default function ProductDetailSlider({ images, name,  }) {
-
+export default function ProductDetailSlider({ images, name }) {
   const handleNext = () => {
     console.log("Next");
   };
@@ -35,27 +34,27 @@ export default function ProductDetailSlider({ images, name,  }) {
       </div>
 
       <div className="hidden w-full max-w-[670px] md:flex justify-between md:px-4 lg:px-0 ">
-            <img
-              src={images.at()}
-              alt={name}
-              className="w-[18%] lg:w-[20%]  rounded-md "
-            />
-            <img
-              src={images.at(1)}
-              alt={name}
-              className="w-[18%] lg:w-[20%] rounded-md"
-            />
-            <img
-              src={images.at(2)}
-              alt={name}
-              className="w-[18%] lg:w-[20%]  rounded-md"
-            />
-            <img
-              src={images.at(3)}
-              alt={name}
-              className="w-[18%] lg:w-[20%]  rounded-md"
-            />
-          </div>
+        <img
+          src={images.at()}
+          alt={name}
+          className="w-[18%] lg:w-[20%]  rounded-md "
+        />
+        <img
+          src={images.at(1)}
+          alt={name}
+          className="w-[18%] lg:w-[20%] rounded-md"
+        />
+        <img
+          src={images.at(2)}
+          alt={name}
+          className="w-[18%] lg:w-[20%]  rounded-md"
+        />
+        <img
+          src={images.at(3)}
+          alt={name}
+          className="w-[18%] lg:w-[20%]  rounded-md"
+        />
+      </div>
     </div>
   );
 }

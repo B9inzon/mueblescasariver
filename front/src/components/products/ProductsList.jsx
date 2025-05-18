@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { products } from "../utils/products.js";
+import { products } from "../../utils/products.js";
 import Link from "next/link";
-import ProductCard from "./ProductCard";
-import ContactBanner from "./ContactBanner.jsx";
+import ProductCard from "./ProductCard.jsx";
+import ContactBanner from "../ContactBanner.jsx";
 import { mostSelling } from "@/utils/mostSelling.js";
-import MostSelling from "./MostSelling.jsx";
-import BurguerFilter from "./BurguerFilter.jsx";
+import MostSelling from "../MostSelling.jsx";
+import BurguerFilter from "../BurguerFilter.jsx";
 
 export default function ProductsList() {
   const [activeCategory, setActiveCategory] = useState("todos");
@@ -35,9 +35,7 @@ export default function ProductsList() {
       {/* //!ESTE ES EL FILTRO DE CATEGORÍAS DE PRODUCTOS */}
 
       <div className="hidden lg:block  lg:h-screen pt-40   sticky top-0  ">
-        <h4 className=" mb-4 px-4 font-bold text-[#3c3a36] ">
-          Filtrar por:
-        </h4>
+        <h4 className=" mb-4 px-4 font-bold text-[#3c3a36] ">Filtrar por:</h4>
         <div className="hidden lg:flex flex-col gap-2 ">
           {categories.map((category) => (
             <button
