@@ -1,17 +1,16 @@
-import React from 'react'
-import {products} from "@/utils/products"
-import ProductDetail from '@/components/ProductDetail'
+import React from "react";
+import { products } from "@/utils/products";
+import ProductDetail from "@/components/productDetail/ProductDetail";
 import { notFound } from "next/navigation";
 
-export default async function page({params}) {
-  const {productId} = await params;
+export default async function page({ params }) {
+  const { productId } = await params;
 
-  const product =  products.find((p) => p.id.toString() === productId )
+  const product = products.find((p) => p.id.toString() === productId);
 
   if (!product) {
-    notFound();  }
+    notFound();
+  }
 
-  return (
-    <ProductDetail {...product}  />
-  )
+  return <ProductDetail {...product} />;
 }
