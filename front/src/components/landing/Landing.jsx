@@ -7,7 +7,7 @@ import { mostSelling } from "@/utils/mostSelling";
 import Link from "next/link";
 import HeroLanding from "./HeroLanding";
 import ContactBanner from "../ContactBanner";
-import { LandingCategorySection } from "../LandingCategorySection";
+import { LandingCategorySection } from "./LandingCategorySection";
 import MostSelling from "../MostSelling";
 
 export const Landing = () => {
@@ -15,8 +15,8 @@ export const Landing = () => {
     <>
       <section className=" relative flex flex-col w-full items-center justify-center  h-screen ">
         <HeroLanding />
-        <div className="absolute z-1  flex left-0 items-center justify-center w-full pb-10 lg:w-1/2 lg:py-0 lg:h-full">
-          <h1 className="font-principal w-full max-w-2xl text-[[#eeece9] px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
+        <div className="absolute z-1  flex left-0  items-center justify-center w-full pb-10 lg:w-2/3 lg:py-0 lg:h-full ">
+          <h1 className="font-principal w-full max-w-2xl text-[#eeece9] px-6 mt-20 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
             Diseño y calidad{" "}
             <span className="block  mt-2 text-6xl md:text-6xl lg:text-8xl font-bold">
               en un solo lugar
@@ -24,11 +24,11 @@ export const Landing = () => {
           </h1>
         </div>
         <div className=" absolute z-0 inset-0  bg-black/60  "></div>
-        <div className="absolute z-1 bottom-20 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center  ">
+        <div className="absolute z-1 bottom-30 md:bottom-20 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center ">
           <Link
             href="/products"
             rel="noopener noreferrer"
-            className=" flex items-center justify-center bg-[#c9c2b7]/75 hover:bg-[#c9c2b7]   p-1 md:p-2 w-auto lg:w-auto rounded-lg   transition-all duration-600 ease-in-out "
+            className=" flex items-center justify-center bg-[#c9c2b7]/75 hover:bg-[#c9c2b7]  p-1 md:p-2 w-auto lg:w-auto rounded-lg   transition-all duration-600 ease-in-out "
             style={{ filter: "drop-shadow(10px 10px 6px #282624)" }}
           >
             <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-4xl px-2  transition-all duration-900 ease-in-out ">
@@ -45,10 +45,10 @@ export const Landing = () => {
             <li>Satisfacción garantizada</li>
           </ul>
         </div>
-        <h1 className="text-3xl lg:text-5xl mb-8 lg:mb-10 text-center  ">
+        <h1 className="text-3xl lg:text-5xl mb-8 lg:mb-10 text-center px-4  ">
           ¿Buscando tu nuevo <span className="font-bold">mueble favorito</span>?
         </h1>
-        <h3 className="text-center text-2xl lg:text-3xl mb-16 lg:mb-20  ">
+        <h3 className="text-center text-xl lg:text-3xl mb-16 lg:mb-20 px-4  ">
           Seguro que lo tenemos y si no, te lo fabricamos. <br />
           <span className="font-bold ">Revisa nuestras categorías.</span>
         </h3>
