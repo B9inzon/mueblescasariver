@@ -23,7 +23,7 @@ export default function ProductDetailInfo({
   });
 
   return (
-    <div className="flex  flex-col w-full  lg:w-[28%] text-[#3c3a36] justify-center xxs:h-[60vh] xs:h-[45vh] md:h-full px-4 md:px-[14vw] lg:px-4  xl:pl-0  gap-2  ">
+    <div className="flex  flex-col w-full  lg:w-[28%] text-[#3c3a36] justify-center xxs:h-[60vh] xs:h-[45vh] md:h-full px-4 md:px-[14vw] lg:px-4  xl:pl-8 xl:pr-0  gap-2  ">
       <h2 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-4">{name}</h2>
       <p className=" mb-4">{description}</p>
       <h2 className="font-semibold">Precio de venta:</h2>
@@ -62,7 +62,7 @@ export default function ProductDetailInfo({
           </span>
         ))}
       </div>
-      <div className=" flex w-full ">
+      <div className=" flex w-full  ">
         <a
           href="https://wa.link/icnysi"
           target="_blank"

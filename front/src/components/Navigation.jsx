@@ -46,7 +46,7 @@ export const Navigation = () => {
       <Link href="/">
         <Logo />
       </Link>
-      <nav className="">
+      <nav >
         <ul className="hidden lg:flex flex-row gap-10 text-lg font-semibold">
           <li>
             <Link href="/">Inicio</Link>
