@@ -16,7 +16,7 @@ export default function ProductDetail({
 }) {
   return (
     <div className="flex flex-col items-center lg:pt-38 min-h-screen   ">
-      <div className="flex flex-col w-full lg:h-[70vh] lg:flex-row xl:gap-4 justify-center  ">
+      <div className="flex flex-col w-full lg:h-[75vh] lg:flex-row xl:gap-4 justify-center bg-green-500 ">
         <ProductDetailSlider images={images} />
         <ProductDetailInfo
           name={name}
