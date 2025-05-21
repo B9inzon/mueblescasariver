@@ -55,7 +55,9 @@ export const Footer = () => {
                 <Link href="/terms">Términos y Condiciones</Link>
               </li>
               <li className=" hover:underline focus:underline focus:outline-none ">
-                <Link href="https://sedeelectronica.sic.gov.co/">
+                <Link href="https://sedeelectronica.sic.gov.co/"
+                target="_blank"
+                >
                   Superintendencia de Industria y Comercio
                 </Link>
               </li>
