@@ -23,7 +23,7 @@ export default function ProductDetailSlider({ images, name }) {
 
   return (
     <div className="flex flex-col w-full md:h-full lg:w-[42%] gap-4 items-center justify-center pt-20 md:pt-24 lg:pt-0 md:mb-8 lg:mb-0 xl:pl-4 bg ">
-      <div className="relative aspect-[16/12] w-full md:w-[70%] lg:w-full  max-w-[650px] rounded-sm md:rounded-none  overflow-hidden ">
+      <div className="relative aspect-[16/12] w-full md:w-[70%] lg:w-full  max-w-[650px] md:rounded-sm  overflow-hidden ">
         <div className="relative w-full h-full min-h-[430px]">
           <Image
             src={images[index]}
