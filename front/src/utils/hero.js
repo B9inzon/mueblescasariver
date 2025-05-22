@@ -1,15 +1,15 @@
 export const hero = [
     {
         id: 1,
-        imgUrl:"/assets/Living-3000.jpg"
+        imgUrl:"/assets/Living3000.jpg"
     },
     {
         id: 2,
-        imgUrl:"/assets/living-2.jpg"
+        imgUrl:"/assets/living2.jpg"
     },
     {
         id: 3,
-        imgUrl:"/assets/sofa-cuero.jpg"
+        imgUrl:"/assets/sofaCuero.jpg"
     },
     {
         id: 4,
