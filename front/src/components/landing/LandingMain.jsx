@@ -16,7 +16,7 @@ export const Landing = () => {
       <section className=" relative flex flex-col w-full items-center justify-center overflow-hidden h-screen max-h-screen ">
         <HeroLanding />
         <div className=" absolute z-1 flex left-0 items-start p-2 pt-50  md:items-center justify-center  w-full  md:pt-0 h-full ">
-          <h1 className=" font-principal w-full md:w-4/5  text-[#eeece9] px-6 text-center lg:text-left lg:pl-10 xl:pl-20 text-3xl md:text-5xl lg:text-6xl bg-amber-400/50 ">
+          <h1 className=" font-principal w-full md:w-4/5  text-[#eeece9] px-6 text-center lg:text-left lg:pl-10 xl:pl-20 text-3xl md:text-5xl lg:text-6xl ">
             Diseño y calidad{" "}
             <span className=" block mt-2 text-5xl md:text-6xl lg:text-8xl font-bold ">
               en un solo lugar
@@ -24,7 +24,7 @@ export const Landing = () => {
           </h1>
         </div>
         <div className=" absolute z-0 inset-0 bg-black/60 "></div>
-        <div className=" absolute z-1 bottom-[30vh] md:bottom-30 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center bg-red-500 p-1 ">
+        <div className=" absolute z-1 bottom-[30vh] md:bottom-30 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center ">
           <Link
             href="/products"
             rel=" noopener noreferrer "
