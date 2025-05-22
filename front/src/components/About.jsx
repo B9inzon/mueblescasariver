@@ -5,7 +5,7 @@ import { Logo } from "@/components/Logo";
 export default function About() {
   return (
     <div className="flex flex-col w-full py- justify-center  items-center text-[#3c3a36] ">
-      <div className=" relative flex flex-col items-center justify-center w-full h-[95vh] lg:w-full p-4 mb-30   lg:p-12  bg-[url('/assets/Living-3000.jpg')] grayscale-75 bg-cover bg-bottom bg-fixed">
+      <div className=" relative flex flex-col items-center justify-center w-full h-[95vh] lg:w-full p-4 mb-30   lg:p-12  bg-[url('/assets/Living3000.jpg')] grayscale-75 bg-cover bg-bottom bg-fixed">
         <h1 className="text-[10vw] sm:text-5xl xl:text-8xl text-[#f9f8f7] font-principal ">
           Muebles Casa River
         </h1>
