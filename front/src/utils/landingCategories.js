@@ -4,7 +4,7 @@ export const landingCategories = [
     {
         name: "Salas",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "/assets/Living-Room.jpg"
+        image: "/assets/LivingRoom.jpg"
     },
 
     {
