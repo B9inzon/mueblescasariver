@@ -7,7 +7,7 @@ import ProductCard from "./ProductCard.jsx";
 import ContactBanner from "../ContactBanner.jsx";
 import { mostSelling } from "@/utils/mostSelling.js";
 import MostSelling from "../MostSelling.jsx";
-import BurguerFilter from "../BurguerFilter.jsx";
+import BurguerFilter from "./productDetail/BurguerFilter.jsx";
 
 export default function ProductsList() {
   const [activeCategory, setActiveCategory] = useState("todos");

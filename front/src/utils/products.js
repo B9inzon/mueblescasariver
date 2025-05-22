@@ -6,10 +6,10 @@ export const products = [
     price: 3799900,
     discount: 0.1,
     images: [
-      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofaTerciopeloAzul1.jpg",
       "/assets/estanteria.webp",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "80x80x90 cm",
@@ -31,10 +31,10 @@ export const products = [
     price: 1500900,
     discount: 0.17,
     images: [
-      "/assets/mesa-de-centro.webp",
-      "/assets/sofa-terciopelo-azul-1.jpg",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
+      "/assets/mesaDeCentro.webp",
+      "/assets/estanteria.webp",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "120x60x45 cm",
@@ -55,10 +55,10 @@ export const products = [
     price: 3778103,
     discount: 0.2,
     images: [
-      "/assets/sofa-seccional.jpg",
-      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofaSeccional.jpg",
+      "/assets/sofaTerciopeloAzul1.jpg",
       "/assets/estanteria.webp",
-      "/assets/mesa-de-centro.webp",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "280x180x85 cm",
@@ -79,10 +79,10 @@ export const products = [
     price: 2518721,
     discount: 0.2,
     images: [
-      "/assets/cama-dosel.webp",
-      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/camaDosel.webp",
+      "/assets/sofaTerciopeloAzul1.jpg",
       "/assets/estanteria.webp",
-      "/assets/mesa-de-centro.webp",
+      "/assets/sofaSeccional.jpg",
     ],
     information: {
       dimensiones: "160x200x180 cm",
@@ -105,9 +105,9 @@ export const products = [
     discount: 0.1,
     images: [
       "/assets/estanteria.webp",
-      "/assets/sofa-terciopelo-azul-1.jpg",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
+      "/assets/sofaTerciopeloAzul1.jpg",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "180x120x35 cm",
@@ -123,39 +123,15 @@ export const products = [
   },
   {
     id: 6,
-    name: "Sillón de Terciopelo 2",
-    description: "Un sillón moderno con acabado de terciopelo.",
-    price: 3799900,
-    discount: 0.1,
-    images: [
-      "/assets/sofa-terciopelo-azul-1.jpg",
-      "/assets/estanteria.webp",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
-    ],
-    information: {
-      dimensiones: "80x80x90 cm",
-      estructura: "Madera y metal",
-      relleno: "Espuma de alta densidad",
-      patas: "Madera de haya maciza",
-      tapizado: "Tela de terciopelo",
-      observaciones:
-        "Disponible en varios colores. El valor de los decorados y detalles personalizados no incluido.",
-    },
-    available: true,
-    categories: ["Sofás", "Sala de estar"],
-  },
- {
-    id: 7,
     name: "Sillón de Terciopelo 1",
     description: "Un sillón moderno con acabado de terciopelo.",
     price: 3799900,
     discount: 0.1,
     images: [
-      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofaTerciopeloAzul1.jpg",
       "/assets/estanteria.webp",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "80x80x90 cm",
@@ -170,17 +146,17 @@ export const products = [
     categories: ["Sofás", "Sala de estar"],
   },
   {
-    id: 8,
+    id: 7,
     name: "Mesa de Centro de Mármol 1",
     description:
       "Elegante mesa de centro con superficie de mármol y base metálica.",
     price: 1500900,
     discount: 0.17,
     images: [
-      "/assets/mesa-de-centro.webp",
-      "/assets/sofa-terciopelo-azul-1.jpg",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
+      "/assets/mesaDeCentro.webp",
+      "/assets/estanteria.webp",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "120x60x45 cm",
@@ -195,16 +171,16 @@ export const products = [
     categories: ["Mesas", "Sala de estar"],
   },
   {
-    id: 9,
+    id: 8,
     name: "Sofá Seccional 1",
     description: "Amplio sofá seccional con chaise longue y tapizado de lino.",
     price: 3778103,
     discount: 0.2,
     images: [
-      "/assets/sofa-seccional.jpg",
-      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofaSeccional.jpg",
+      "/assets/sofaTerciopeloAzul1.jpg",
       "/assets/estanteria.webp",
-      "/assets/mesa-de-centro.webp",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "280x180x85 cm",
@@ -219,16 +195,16 @@ export const products = [
     categories: ["Sofás", "Sala de estar"],
   },
   {
-    id: 10,
+    id: 9,
     name: "Cama con Dosel 1",
     description: "Cama elegante con dosel y cabecero tapizado.",
     price: 2518721,
     discount: 0.2,
     images: [
-      "/assets/cama-dosel.webp",
-      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/camaDosel.webp",
+      "/assets/sofaTerciopeloAzul1.jpg",
       "/assets/estanteria.webp",
-      "/assets/mesa-de-centro.webp",
+      "/assets/sofaSeccional.jpg",
     ],
     information: {
       dimensiones: "160x200x180 cm",
@@ -243,7 +219,7 @@ export const products = [
     categories: ["Camas", "Dormitorio"],
   },
   {
-    id: 11,
+    id: 10,
     name: "Estantería Modular 1",
     description:
       "Sistema de estanterías personalizable con módulos intercambiables.",
@@ -251,9 +227,9 @@ export const products = [
     discount: 0.1,
     images: [
       "/assets/estanteria.webp",
-      "/assets/sofa-terciopelo-azul-1.jpg",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
+      "/assets/sofaTerciopeloAzul1.jpg",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "180x120x35 cm",
@@ -268,16 +244,41 @@ export const products = [
     categories: ["Almacenamiento"],
   },
   {
+    id: 11,
+    name: "Mesa de Centro de Mármol 1",
+    description:
+      "Elegante mesa de centro con superficie de mármol y base metálica.",
+    price: 1500900,
+    discount: 0.17,
+    images: [
+      "/assets/mesaDeCentro.webp",
+      "/assets/estanteria.webp",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
+    ],
+    information: {
+      dimensiones: "120x60x45 cm",
+      estructura: "Metal cromado",
+      relleno: "No aplica",
+      patas: "Estructura de metal",
+      tapizado: "No aplica",
+      observaciones:
+        "Superficie resistente a manchas. El valor de los decorados y detalles personalizados no incluido.",
+    },
+    available: true,
+    categories: ["Mesas", "Sala de estar"],
+  },
+  {
     id: 12,
-    name: "Sillón de Terciopelo 2",
+    name: "Sillón de Terciopelo 1",
     description: "Un sillón moderno con acabado de terciopelo.",
     price: 3799900,
     discount: 0.1,
     images: [
-      "/assets/sofa-terciopelo-azul-1.jpg",
+      "/assets/sofaTerciopeloAzul1.jpg",
       "/assets/estanteria.webp",
-      "/assets/sofa-seccional.jpg",
-      "/assets/cama-dosel.webp",
+      "/assets/sofaSeccional.jpg",
+      "/assets/camaDosel.webp",
     ],
     information: {
       dimensiones: "80x80x90 cm",
@@ -291,4 +292,5 @@ export const products = [
     available: true,
     categories: ["Sofás", "Sala de estar"],
   },
+  
 ];

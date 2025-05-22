@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 import { VisionIcon } from "@/components/icons/VisionIcon";
 import { Logo } from "@/components/Logo";
-
 
 export default function About() {
   return (
     <div className="flex flex-col w-full py- justify-center  items-center text-[#3c3a36] ">
       <div className=" relative flex flex-col items-center justify-center w-full h-[95vh] lg:w-full p-4 mb-30   lg:p-12  bg-[url('/assets/Living-3000.jpg')] grayscale-75 bg-cover bg-bottom bg-fixed">
-        <h1 className="text-[10vw] sm:text-5xl xl:text-8xl text-[#f9f8f7] font-principal ">Muebles Casa River</h1>
+        <h1 className="text-[10vw] sm:text-5xl xl:text-8xl text-[#f9f8f7] font-principal ">
+          Muebles Casa River
+        </h1>
         <div className=" absolute inset-0 -z-1   bg-black opacity-60  "></div>
       </div>
       <h1 className="font-semibold text-center w-full lg:w-[60vw] text-[6vw] sm:text-4xl mb-5 lg:mb-10 ">
@@ -26,7 +27,8 @@ export default function About() {
       <br />
       <p className="w-[80vw] lg:w-[60vw] text-justify font-medium text-base mb-10">
         Con más de 25 años de experiencia fabricando, diseñando y distribuyendo
-        muebles de excelente calidad y diseño a precios justos, en <span className="font-bold">Muebles Casa River</span> tenemos como
+        muebles de excelente calidad y diseño a precios justos, en{" "}
+        <span className="font-bold">Muebles Casa River</span> tenemos como
         prioridad la satisfacción de nuestros clientes. Por ello, nos
         comprometemos a brindar una atención personalizada que los haga sentir
         como si estuvieran en uno de nuestros almacenes físicos, y que les
@@ -40,10 +42,11 @@ export default function About() {
         <p className="text-justify font-semibold w-[60%] ">
           Nuestro objetivo es ofrecer a nuestros clientes, en un solo lugar y de
           manera cómoda e innovadora, un amplio catálogo de productos de
-          diferentes almacenes y fabricantes asociados, facilitando así el acceso a opciones de
-          calidad que se adapten a sus gustos y necesidades.
+          diferentes almacenes y fabricantes asociados, facilitando así el
+          acceso a opciones de calidad que se adapten a sus gustos y
+          necesidades.
         </p>
       </div>
     </div>
-  )
+  );
 }

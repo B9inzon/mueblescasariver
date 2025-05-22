@@ -1,5 +1,6 @@
-import ProductsList from "@/components/products/ProductsList";
 import React from "react";
+
+import ProductsList from "@/components/products/ProductsList";
 
 const page = () => {
   return (

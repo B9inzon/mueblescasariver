@@ -1,7 +1,7 @@
 "use client";
 
-import { MenuIcon } from "./icons/MenuIcon";
-import { CloseIcon } from "./icons/CloseIcon";
+import { MenuIcon } from "@/components/icons/MenuIcon";
+import { CloseIcon } from "@/components/icons/CloseIcon";
 import Link from "next/link";
 
 const BurguerMenu = ({ isOpen, onToggle }) => {

@@ -6,13 +6,13 @@ import { Footer } from "@/components/Footer";
 const playfair = Playfair_Display({
   variable: "--font-principal",
   subsets: ["latin"],
-  display: 'swap'
+  display: "swap",
 });
 
 const montserrat = Montserrat({
   variable: "--font-secondary",
   subsets: ["latin"],
-  display: 'swap'
+  display: "swap",
 });
 
 export const metadata = {
@@ -23,10 +23,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth ">
-      <body className={`${playfair.variable} ${montserrat.variable} antialiased`}>
-        <Navigation/>
+      <body
+        className={`${playfair.variable} ${montserrat.variable} antialiased`}
+      >
+        <Navigation />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

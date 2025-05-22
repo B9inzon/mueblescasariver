@@ -1,8 +1,7 @@
 "use client";
 
-import { MenuIcon } from "./icons/MenuIcon";
-import { CloseIcon } from "./icons/CloseIcon";
-import { products } from "../utils/products.js";
+import { CloseIcon } from "@/components/icons/CloseIcon";
+import { products } from "@/utils/products.js";
 
 const BurguerFilter = ({ isOpen, onToggle, activeCategory, setActiveCategory }) => {
   const uniqueCategories = [

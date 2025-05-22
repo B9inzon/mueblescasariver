@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { landingCategories } from "@/utils/landing-categories";
+import { landingCategories } from "@/utils/landingCategories";
 import { LandingAbout } from "./LandingAbout";
 import { mostSelling } from "@/utils/mostSelling";
 import Link from "next/link";
@@ -13,47 +13,47 @@ import MostSelling from "../MostSelling";
 export const Landing = () => {
   return (
     <>
-      <section className=" relative flex flex-col w-full items-center justify-center overflow-hidden   h-screen ">
+      <section className=" relative flex flex-col w-full items-center justify-center overflow-hidden h-screen max-h-screen ">
         <HeroLanding />
-        <div className="absolute z-1  flex left-0  items-center justify-center  w-full p-2 lg:py-0 h-full ">
-          <h1 className="font-principal w-full md:w-4/5   text-[#eeece9] px-6 md:mt-16 text-center lg:text-left lg:pl-10 xl:pl-20 text-4xl md:text-5xl lg:text-6xl  ">
+        <div className=" absolute z-1 flex left-0 items-start p-2 pt-50  md:items-center justify-center  w-full  md:pt-0 h-full ">
+          <h1 className=" font-principal w-full md:w-4/5  text-[#eeece9] px-6 text-center lg:text-left lg:pl-10 xl:pl-20 text-3xl md:text-5xl lg:text-6xl bg-amber-400/50 ">
             Diseño y calidad{" "}
-            <span className="block  mt-2 text-6xl md:text-6xl lg:text-8xl font-bold">
+            <span className=" block mt-2 text-5xl md:text-6xl lg:text-8xl font-bold ">
               en un solo lugar
             </span>
           </h1>
         </div>
-        <div className=" absolute z-0 inset-0  bg-black/60  "></div>
-        <div className="absolute z-1 bottom-45 md:bottom-30 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center ">
+        <div className=" absolute z-0 inset-0 bg-black/60 "></div>
+        <div className=" absolute z-1 bottom-[30vh] md:bottom-30 xl:right-60 flex w-full lg:w-auto h-auto items-center justify-center bg-red-500 p-1 ">
           <Link
             href="/products"
-            rel="noopener noreferrer"
-            className=" flex items-center justify-center bg-[#c9c2b7]/75 hover:bg-[#c9c2b7]  p-1 md:p-2 w-auto lg:w-auto rounded-lg   transition-all duration-600 ease-in-out "
-            style={{ filter: "drop-shadow(10px 10px 6px #282624)" }}
+            rel=" noopener noreferrer "
+            className=" flex items-center justify-center bg-[#c9c2b7]/75 hover:bg-[#c9c2b7] p-1 md:p-2 h-[6vh] w-auto lg:w-auto rounded-xl transition-all duration-600 ease-in-out "
+            style={{ filter: " drop-shadow(10px 10px 6px #282624) " }}
           >
-            <h3 className="text-[#3c3a36]  font-semibold text-xl md:text-2xl lg:text-4xl px-2  transition-all duration-900 ease-in-out ">
+            <h3 className=" text-[#3c3a36] font-semibold text-xl md:text-2xl lg:text-4xl px-2 transition-all duration-900 ease-in-out ">
               Conoce nuestros productos &#10143;
             </h3>
           </Link>
         </div>        
       </section>
-      <div className="flex items-center z-1 justify-center  w-full h-[30vh] md:h-[250px] lg:h-[8vh] mb-24 bg-[#141312]">
-          <ul className="flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-50 font-secondary text-center text-2xl lg:text-xl font-semibold xl:text-2xl text-[#eeece9] ">
+      <div className=" flex items-center z-1 justify-center w-full h-[30vh] md:h-[250px] lg:h-[8vh] mb-24 bg-[#141312] ">
+          <ul className=" flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-50 font-secondary text-center text-2xl lg:text-xl font-semibold xl:text-2xl text-[#eeece9] ">
             <li >Diseños personalizados</li>
             <li >Calidad sorprendente</li>
             <li >Satisfacción garantizada</li>
           </ul>
         </div>
       
-      <section className="flex flex-col h-full w-full items-center  text-[#3C3A36]">        
-        <h1 className="text-3xl lg:text-5xl mb-8 lg:mb-10 text-center px-4  ">
+      <section className=" flex flex-col h-full w-full items-center  text-[#3C3A36] ">        
+        <h1 className=" text-3xl lg:text-5xl mb-8 lg:mb-10 text-center px-4 ">
           ¿Buscando tu nuevo <span className="font-bold">mueble favorito</span>?
         </h1>
-        <h3 className="text-center text-xl lg:text-3xl mb-16 lg:mb-20 px-4  ">
+        <h3 className=" text-center text-xl lg:text-3xl mb-16 lg:mb-20 px-4 ">
           Seguro que lo tenemos y si no, te lo fabricamos. <br />
-          <span className="font-bold ">Revisa nuestras categorías.</span>
+          <span className=" font-bold ">Revisa nuestras categorías.</span>
         </h3>
-        <div className="grid grid-cols-2 lg:grid-cols-4 md:flex-wrap px-4 sm:px-10 md:px-14 xl:px-[15vw] w-full items-center justify-center gap-6 ">
+        <div className=" grid grid-cols-2 lg:grid-cols-4 md:flex-wrap px-4 sm:px-10 md:px-14 xl:px-[15vw] w-full items-center justify-center gap-6 ">
           {landingCategories.map((category, index) => (
             <LandingCategorySection
               key={index}
