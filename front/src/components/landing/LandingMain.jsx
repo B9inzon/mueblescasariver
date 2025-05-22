@@ -53,7 +53,7 @@ export const Landing = () => {
           Seguro que lo tenemos y si no, te lo fabricamos. <br />
           <span className=" font-bold ">Revisa nuestras categorías.</span>
         </h3>
-        <div className=" grid grid-cols-2 lg:grid-cols-4 md:flex-wrap px-4 sm:px-10 md:px-14 xl:px-[15vw] w-full items-center justify-center gap-6 ">
+        <div className=" grid grid-cols-2 lg:grid-cols-3 md:flex-wrap px-4 sm:px-10 md:px-14 xl:px-[15vw] w-full items-center justify-center gap-6 ">
           {landingCategories.map((category, index) => (
             <LandingCategorySection
               key={index}
