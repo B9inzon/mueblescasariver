@@ -55,7 +55,7 @@ export const Footer = () => {
                   target="_blank"
                   rel=" noopener noreferrer "
                   aria-label=" Escríbenos al WhatsApp "
-                  className="flex items-center gap-2"
+                  className="flex items-center justify-center lg:justify-start gap-2 "
                 >
                   <WhatsappIcon  /> +57 301 315 1460
                 </Link>
@@ -63,7 +63,7 @@ export const Footer = () => {
               <li className=" hover:underline focus:underline focus:outline-none ">
                 <span
                   aria-label=" Llámanos a este número "
-                  className="flex items-center gap-2"
+                  className="flex items-center justify-center lg:justify-start gap-2"
                 >
                   <PhoneIcon  /> +57 301 315 1460
                 </span>
@@ -71,7 +71,7 @@ export const Footer = () => {
               <li className=" hover:underline focus:underline focus:outline-none ">
                 <span
                   aria-label="Escríbenos a este correo"
-                  className="flex items-center gap-2"
+                  className="flex items-center justify-center lg:justify-start gap-2"
                 >
                   <MailIcon  /> mueblescasariver@gmail.com
                 </span>
