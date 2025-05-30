@@ -205,12 +205,13 @@ export const ContactUs = () => {
               name="message"
               value={message}
               onChange={handleInputChange}
-              inputMode="text"
+              autoComplete="off"
+              spellCheck="true"
               cols="50"
               rows="5"
               maxLength="500"
               placeholder="Mensaje *"
-              className={` w-full pl-4 pt-3 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
+              className={` w-full pl-4 pt-3 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 resize-none ${
                 errors.message ? "border-red-500" : "border-gray-300"
               }  `}
             />
