@@ -185,7 +185,8 @@ export const ContactUs = () => {
 
           <fieldset className="flex flex-col items-start w-full">
             <input
-              type="tel"
+              type="text"
+              inputMode="tel"
               name="number"
               value={number}
               onChange={handleInputChange}
