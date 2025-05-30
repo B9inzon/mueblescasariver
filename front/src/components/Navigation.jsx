@@ -51,22 +51,22 @@ export const Navigation = () => {
 
           <li className="group relative flex flex-col items-center h-3/5 cursor-pointer ">
             <Link href="/" >Inicio</Link>
-            <span className="absolute bottom-0 w-0 group-hover:w-full h-1 rounded group-hover:bg-[#eeece9] transition-all duration-500"></span>
+            <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
 
           <li className="group relative flex flex-col items-center h-3/5 cursor-pointer ">
             <Link href="/products" >Catálogo</Link>
-            <span className="absolute bottom-0 w-0 group-hover:w-full h-1 rounded group-hover:bg-[#eeece9] transition-all duration-500"></span>
+            <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
 
           <li className="group relative flex flex-col items-center h-3/5 cursor-pointer ">
             <Link href="/contact" >Contacto</Link>
-            <span className="absolute bottom-0 w-0 group-hover:w-full h-1 rounded group-hover:bg-[#eeece9] transition-all duration-500"></span>
+            <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
 
           <li className="group relative flex flex-col items-center  h-3/5 cursor-pointer ">
             <Link href="/about" >Acerca de nosotros</Link>
-            <span className="absolute bottom-0 w-0 group-hover:w-full h-1 rounded group-hover:bg-[#eeece9] transition-all duration-500"></span>
+            <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
 
         </ul>

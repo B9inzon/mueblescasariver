@@ -1,20 +1,117 @@
-import React, {useRef} from "react";
+"use client";
 
-import emailjs from '@emailjs/browser'
+import React, { useRef, useState } from "react";
+
+import emailjs from "@emailjs/browser";
 import { WhatsappIcon } from "./icons/WhatsappIcon";
 import { MailIcon } from "./icons/MailIcon";
 import Link from "next/link";
 import { PhoneIcon } from "./icons/PhoneIcon";
 
 export const ContactUs = () => {
-
   const refForm = useRef();
+  const [form, setForm] = useState({
+    username: "",
+    email: "",
+    number: "",
+    message: "",
+  });
 
-  const handleSubmit = (event) => {
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const username = form.username.trim();
+  const email = form.email.trim();
+  const number = form.number.trim();
+  const message = form.message.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^[0-9]{10}$/;
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!username) {
+      newErrors.username = "El nombre es requerido.";
+    } else if (form.username.length < 2) {
+      newErrors.username = "El nombre debe tener al menos dos caracteres";
+    }
+
+    if (!email) {
+      newErrors.email = "El email es requerido.";
+    } else if (!emailRegex.test(email)) {
+      newErrors.email = "Ingresa un email válido.";
+    }
+
+    if (!number) {
+      newErrors.number = "El número de celular es requerido.";
+    } else if (!phoneRegex.test(number.replace(/\s/g, ""))) {
+      newErrors.number = "Ingresa un número válido de 10 dígitos.";
+    }
+
+    if (!message) {
+      newErrors.message = "El mensaje es requerido.";
+    } else if (message.length < 10) {
+      newErrors.message = "El mensaje debe tener al menos 10 caracteres.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    if (errors[name]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    emailjs.sendForm('','', form.current, {})
-  }
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    const serviceId = "service_g3a2tji";
+    const templateId = "template_rox2jm2";
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
+    try {
+      const result = await emailjs.sendForm(
+        serviceId,
+        templateId,
+        refForm.current,
+        apiKey
+      );
+      console.log("Email enviado:", result.text);
+
+      setForm({
+        username: "",
+        email: "",
+        number: "",
+        message: "",
+      });
+
+      setSubmitStatus("success");
+    } catch (error) {
+      console.log("Error al enviar el mensaje:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center pt-28 lg:pt-36 px-8 md:px-[9vw] lg:px-[6vw] xl:px-[14vw]  min-h-screen  ">
@@ -48,54 +145,107 @@ export const ContactUs = () => {
       </div>
       <div className="h-auto w-full lg:w-1/2  ">
         <form
-          action="submit"
-          className="flex flex-col justify-center items-center gap-8 py-4 lg:px-10 xl:px-14 w-full h-full text-[#3c3a36]  "
+          ref={refForm}
+          onSubmit={handleSubmit}
+          className="flex flex-col justify-center items-center gap-6 py-4 lg:px-10 xl:px-14 w-full h-full text-[#3c3a36]  "
         >
-          <fieldset className="flex items-center justify-center  h-12 w-full">
+          <fieldset className="flex flex-col items-start w-full">
             <input
               type="text"
               name="username"
+              value={username}
+              onChange={handleInputChange}
               placeholder="Nombre completo o empresa *"
-              required
-              className="w-full h-10 pl-4 border rounded"
+              className={`w-full h-12 pl-4 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
+                errors.username ? "border-red-500" : "border-gray-300"
+              } `}
             />
+            {errors.username && (
+              <span className="text-red-500 text-sm mt-1">
+                {errors.username}
+              </span>
+            )}
           </fieldset>
-          <fieldset className="flex flex-col items-center gap-4 justify-center  h-auto w-full">
+
+          <fieldset className="flex flex-col items-start w-full">
             <input
-              type=" email "
+              type="email"
               name="email"
+              value={email}
+              onChange={handleInputChange}
               placeholder="Email *"
-              required
-              className="w-full h-10 pl-4 border rounded"
+              className={`w-full h-12 pl-4 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
+                errors.email ? "border-red-500" : "border-gray-300"
+              } `}
             />
+            {errors.email && (
+              <span className="text-red-500 text-sm mt-1">{errors.email}</span>
+            )}
           </fieldset>
-          <fieldset className="flex flex-col items-center gap-4 justify-center  h-auto w-full">
+
+          <fieldset className="flex flex-col items-start w-full">
             <input
-              type=" number "
+              type="tel"
               name="number"
-              placeholder="Celular*"
-              required
-              className="w-full h-10 pl-4 border rounded"
+              value={number}
+              onChange={handleInputChange}
+              placeholder="Celular *"
+              className={` w-full h-12 pl-4 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
+                errors.number ? "border-red-500" : "border-gray-300"
+              } `}
             />
+            {errors.number && (
+              <span className="text-red-500 text-sm mt-1">{errors.number}</span>
+            )}
           </fieldset>
-          <fieldset className="flex flex-col items-center gap-4 justify-center  h-auto w-full">
+
+          <fieldset className="flex flex-col items-start w-full">
             <textarea
-              type=" text "
               name="message"
+              value={message}
+              onChange={handleInputChange}
               cols="50"
               rows="5"
               maxLength="500"
-              placeholder="Mensaje*"
+              placeholder="Mensaje *"
               required
-              className=" w-full pl-4 pt-2 border rounded"
+              className={` w-full pl-4 pt-3 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
+                errors.message ? "border-red-500" : "border-gray-300"
+              }  `}
             />
+            {errors.message && (
+              <span className="text-red-500 text-sm mt-1">
+                {" "}
+                {errors.message}{" "}
+              </span>
+            )}
+            <span className="text-red-500 text-sm mt-1">
+              {form.message.length}/500 caracteres{" "}
+            </span>
           </fieldset>
           <button
             type="submit"
-            className="w-[30%] h-[40px] text-[#eeece9] font-semibold bg- rounded-lg cursor-pointer bg-[#3c3a36]/80 hover:bg-[#3c3a36]/60 "
+            disabled={isSubmitting}
+            className={` w-full sm:w-auto px-8 h-12 text-[#eeece9] font-semibold rounded-lg cursor-pointer transition-all duration-300 bg-[#3c3a36]/80 hover:bg-[#3c3a36]/60 ${
+              isSubmitting
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-[#3c3a36] hover:bg-[#3c3a36]/80 hover:scale-105"
+            } `}
           >
-            Enviar
+            {isSubmitting ? 'Enviado': 'Enviar'}
           </button>
+
+          {submitStatus === 'success' && (
+            <div className="w-full p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+              ¡Mensaje enviado con éxito! Te contactaremos pronto.
+            </div>
+          )}
+
+          {submitStatus === 'error' && (
+            <div className="w-full p-4 bg-red-100 border-red-400 text-red-700 rounded-lg ">
+              Hubo un error al enviar el mensaje. Por favor intenta nuevamente.
+            </div>
+          )}
         </form>
       </div>
     </section>
