@@ -24,7 +24,7 @@ export const ContactUs = () => {
   const username = form.username.trim();
   const email = form.email.trim();
   const number = form.number.trim();
-  const message = form.message.trim();
+  const message = form.message;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^[0-9]{10}$/;
 
