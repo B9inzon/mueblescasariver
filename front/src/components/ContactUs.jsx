@@ -204,11 +204,11 @@ export const ContactUs = () => {
               name="message"
               value={message}
               onChange={handleInputChange}
+              inputMode="text"
               cols="50"
               rows="5"
               maxLength="500"
               placeholder="Mensaje *"
-              required
               className={` w-full pl-4 pt-3 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
                 errors.message ? "border-red-500" : "border-gray-300"
               }  `}
