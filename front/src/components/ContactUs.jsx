@@ -157,7 +157,7 @@ export const ContactUs = () => {
               onChange={handleInputChange}
               placeholder="Nombre completo o empresa *"
               className={`w-full h-12 pl-4 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
-                errors.username ? "border-red-500" : "border-gray-300"
+                errors.username ? "border-red-500" : "border-gray-400"
               } `}
             />
             {errors.username && (
@@ -175,7 +175,7 @@ export const ContactUs = () => {
               onChange={handleInputChange}
               placeholder="Email *"
               className={`w-full h-12 pl-4 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
-                errors.email ? "border-red-500" : "border-gray-300"
+                errors.email ? "border-red-500" : "border-gray-400"
               } `}
             />
             {errors.email && (
@@ -192,7 +192,7 @@ export const ContactUs = () => {
               onChange={handleInputChange}
               placeholder="Celular *"
               className={` w-full h-12 pl-4 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 ${
-                errors.number ? "border-red-500" : "border-gray-300"
+                errors.number ? "border-red-500" : "border-gray-400"
               } `}
             />
             {errors.number && (
@@ -212,7 +212,7 @@ export const ContactUs = () => {
               maxLength="500"
               placeholder="Mensaje *"
               className={` w-full pl-4 pt-3 border border-[#3c3a36]/30 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#3c3a36]/30 resize-none ${
-                errors.message ? "border-red-500" : "border-gray-300"
+                errors.message ? "border-red-500" : "border-gray-400"
               }  `}
             />
             {errors.message && (
@@ -221,7 +221,7 @@ export const ContactUs = () => {
                 {errors.message}{" "}
               </span>
             )}
-            <span className="text-red-500 text-sm mt-1">
+            <span className="text-[#3c3a36]/60 text-sm mt-1">
               {form.message.length}/500 caracteres{" "}
             </span>
           </fieldset>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #fdfdfc;
   --foreground: #fcfcfa;
   font-size: 100%;
 }
@@ -22,7 +22,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: ##fcfcfa;
+    --background: #f4f3f1;
     --foreground: #ededed;
   }
 }
