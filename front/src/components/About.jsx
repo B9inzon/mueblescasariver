@@ -14,7 +14,6 @@ export default function About() {
         priority
         className=" object-cover object-bottom grayscale-75 "
         sizes="100vw"
-        quality={85}
         />
         
         <div className=" absolute inset-0 z-10   bg-black opacity-60  "></div>
