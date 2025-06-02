@@ -86,7 +86,7 @@ export const ContactUs = () => {
 
     const serviceId = "service_g3a2tji";
     const templateId = "template_rox2jm2";
-    const apiKey = "JpiuMNyeOtIh_3Fmd"
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
     try {
       const result = await emailjs.sendForm(
