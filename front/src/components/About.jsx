@@ -1,16 +1,29 @@
 import React from "react";
+import Image from "next/image";
 import { VisionIcon } from "@/components/icons/VisionIcon";
-import { Logo } from "@/components/Logo";
 
 export default function About() {
   return (
     <div className="flex flex-col w-full py- justify-center  items-center text-[#3c3a36] ">
-      <div className=" relative flex flex-col items-center justify-center w-full h-[95vh] lg:w-full p-4 mb-30   lg:p-12  bg-[url('/assets/Living3000.jpg')] grayscale-75 bg-cover bg-bottom bg-fixed">
-        <h1 className="text-[10vw] sm:text-5xl xl:text-8xl text-[#f9f8f7] font-principal ">
+
+      <div className=" relative flex flex-col items-center justify-center w-full h-[100vh]  p-4 mb-30   lg:p-12 overflow-hidden ">
+        <Image
+        src="/assets/Living3000.jpg"
+        alt="Muebles Casa River - Sala de estar"
+        fill
+        priority
+        className=" object-cover object-bottom grayscale-75 "
+        sizes="100vw"
+        quality={85}
+        />
+        
+        <div className=" absolute inset-0 z-10   bg-black opacity-60  "></div>
+
+        <h1 className="relative z-20 text-[10vw] sm:text-5xl xl:text-8xl text-[#f9f8f7] font-principal ">
           Muebles Casa River
         </h1>
-        <div className=" absolute inset-0 -z-1   bg-black opacity-60  "></div>
       </div>
+      
       <h1 className="font-semibold text-center w-full lg:w-[60vw] text-[6vw] sm:text-4xl mb-5 lg:mb-10 ">
         Sobre Muebles Casa River
       </h1>
