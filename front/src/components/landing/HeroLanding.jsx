@@ -60,6 +60,7 @@ export default function HeroLanding() {
                     className="w-full h-full object-cover grayscale-75 "
                     width={500}
                     height={500}
+                    quality={85}
                   />
                 </li>
               );
