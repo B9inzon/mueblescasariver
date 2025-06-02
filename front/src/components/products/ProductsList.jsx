@@ -6,7 +6,7 @@ import Link from "next/link";
 import ProductCard from "./ProductCard.jsx";
 import ContactBanner from "../ContactBanner.jsx";
 import { mostSelling } from "@/utils/mostSelling.js";
-import MostSelling from "../MostSelling.jsx";
+import MostSelling from "./MostSelling.jsx";
 import BurguerFilter from "./productDetail/BurguerFilter.jsx";
 
 export default function ProductsList() {
@@ -55,7 +55,7 @@ export default function ProductsList() {
         </div>
       </div>
       <div className="flex w-full lg:w-[80%] flex-col min-h-screen items-center ">
-        <h1 className="flex font-secondary items-center justify-center text-center  w-full h-[15vh] lg:h-[18vh] text-[6vw] font-semibold md:text-[5vw] lg:text-[4vw] text-[#3c3a36]   ">
+        <h1 className="flex font-secondary items-center justify-center text-center  w-full h-[15vh] lg:h-[18vh] text-[5vw] font-medium md:text-[6vw] lg:text-[3vw] text-[#3c3a36]   ">
           Conoce nuestros productos
         </h1>
         <div className="flex flex-row h-[6vh] w-full xl:w-[69.3vw] items-center  px-5 lg:px-0 gap-6 mb-5 lg:mb-0   ">

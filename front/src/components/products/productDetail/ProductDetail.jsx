@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import MostSelling from "../../MostSelling";
+import MostSelling from "../MostSelling";
 import { mostSelling } from "@/utils/mostSelling";
 import ProductDetailSlider from "./ProductDetailSlider";
 import ProductDetailInfo from "./ProductDetailInfo";

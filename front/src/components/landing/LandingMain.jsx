@@ -8,7 +8,7 @@ import Link from "next/link";
 import HeroLanding from "./HeroLanding";
 import ContactBanner from "../ContactBanner";
 import { LandingCategorySection } from "./LandingCategorySection";
-import MostSelling from "../MostSelling";
+import MostSelling from "../products/MostSelling";
 
 export const Landing = () => {
   return (
@@ -35,17 +35,17 @@ export const Landing = () => {
               Conoce nuestros productos &#10143;
             </h3>
           </Link>
-        </div>        
+        </div>
       </section>
       <div className=" flex items-center z-1 justify-center w-full h-[30vh] md:h-[250px] lg:h-[8vh] mb-24 bg-[#141312] ">
-          <ul className=" flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-50 font-secondary text-center text-2xl lg:text-xl font-semibold xl:text-2xl text-[#eeece9] ">
-            <li >Diseños personalizados</li>
-            <li >Calidad sorprendente</li>
-            <li >Satisfacción garantizada</li>
-          </ul>
-        </div>
-      
-      <section className=" flex flex-col h-full w-full items-center  text-[#3C3A36] ">        
+        <ul className=" flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-50 font-secondary text-center text-2xl lg:text-xl font-semibold xl:text-2xl text-[#eeece9] ">
+          <li>Diseños personalizados</li>
+          <li>Calidad sorprendente</li>
+          <li>Satisfacción garantizada</li>
+        </ul>
+      </div>
+
+      <section className=" flex flex-col h-full w-full items-center  text-[#3C3A36] ">
         <h1 className=" text-3xl lg:text-5xl mb-8 lg:mb-10 text-center px-4 ">
           ¿Buscando tu nuevo <span className="font-bold">mueble favorito</span>?
         </h1>
@@ -66,7 +66,7 @@ export const Landing = () => {
         </div>
       </section>
       <ContactBanner className=" " />
-      <h1 className="flex font-secondary items-center justify-center text-center font-semibold w-full h-[20vh] text-[10vw] md:text-[7vw] lg:text-[3vw] text-[#3c3a36] ">
+      <h1 className="flex font-secondary items-center justify-center text-center font-medium w-full h-[20vh] text-[10vw] md:text-[7vw] lg:text-[3vw] text-[#3c3a36] ">
         Lo más vendido
       </h1>
       <div className="grid grid-cols-2  lg:grid-cols-4  w-full items-center px-2 md:px-14 xl:px-[15vw] py-5 justify-center gap-4 ">
@@ -113,9 +113,8 @@ export const Landing = () => {
           </ul>
         </div>
       </section>
-      
+
       <LandingAbout />
-      
     </>
   );
 };
