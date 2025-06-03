@@ -48,27 +48,25 @@ export const Navigation = () => {
       </Link>
       <nav className="   h-full  ">
         <ul className="hidden lg:flex flex-row gap-12 text-lg h-full items-end font-semibold ">
-
           <li className="group relative flex flex-col items-center h-3/5 cursor-pointer ">
-            <Link href="/" >Inicio</Link>
+            <Link href="/">Inicio</Link>
             <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
 
           <li className="group relative flex flex-col items-center h-3/5 cursor-pointer ">
-            <Link href="/products" >Catálogo</Link>
+            <Link href="/products">Catálogo</Link>
             <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
 
           <li className="group relative flex flex-col items-center h-3/5 cursor-pointer ">
-            <Link href="/contact" >Contacto</Link>
+            <Link href="/contact">Contacto</Link>
             <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
 
           <li className="group relative flex flex-col items-center  h-3/5 cursor-pointer ">
-            <Link href="/about" >Acerca de nosotros</Link>
+            <Link href="/about">Acerca de nosotros</Link>
             <span className="absolute bottom-0 w-0 group-hover:w-full h-1  group-hover:bg-[#eeece9] transition-all duration-500"></span>
           </li>
-
         </ul>
         <div className="lg:hidden">
           <BurguerMenu isOpen={isMenuOpen} onToggle={handleMenuToggle} />
